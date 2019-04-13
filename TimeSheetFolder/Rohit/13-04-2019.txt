@@ -7,3 +7,10 @@
 	 ---> badge 
 	 
 2) Login UI ==>  2hr (Stuck)
+
+3) Materials angular  ==>   1.5hr  (completed given task)
+     ---> imagebar
+	 ---> sidebar
+	 ---> menubar
+	 ---> input field flat icon
+	 ---> Image resizing (working)
