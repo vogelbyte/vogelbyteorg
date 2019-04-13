@@ -1,0 +1,2 @@
+1) Material Angular==> 1.5hr (Completed)
+2) Db Connection in spring  ==> 4hr (Stuck)

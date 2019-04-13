@@ -1,0 +1,9 @@
+1) Materials angular  ==>   1.5hr  (completed given task)
+     ---> Button Style
+	 ---> Add solid Icon
+	 ---> Toggle effect
+	 ---> loading spinner 
+	 ---> input field 
+	 ---> badge 
+	 
+2) Login UI ==>  2hr (Stuck)
