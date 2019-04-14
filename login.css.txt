@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+//////login-Panel///////
+#home{
+    text-align:center;
+    margin-top:200px;
+}
+#left-side {
+    width: 400px;
+    float: left;
+    height: 100px;
+    margin-left: 300px;
+    background-color: blue;
+    
+}
+
+
+#right-side {
+    width: 400px;
+    background-color: rgb(132, 12, 212);
+    height: 100px;
+    float:left;
+}
+
