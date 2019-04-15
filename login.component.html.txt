@@ -1,0 +1,29 @@
+<body background="background.jpg">
+
+<h2>
+  <b>Sign into XYZ</b>
+</h2>
+
+<div class="container-fluid">
+   <div id="left-side">
+     <form>
+        <div class="form-group">
+          
+            <input type="text"  class="form-control"  placeholder="  email id">
+        </div><br><br>
+       
+        <div> 
+           <input type="password" class="form-control" placeholder="  password">
+        </div><br><br>
+
+        <button mat-raised-button color="primary">login</button>
+     </form>
+   </div>
+  
+    <div id="right-side">
+      Hi this is our System login pannel
+      
+    </div>
+
+</div>
+</body>

@@ -1,0 +1,24 @@
+// /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// //////login-Panel///////
+#home{
+    text-align:center;
+    margin-top:200px;
+}
+#left-side {
+    width: 400px;
+    float: left;
+    height: 300px;
+    margin-left: 300px;
+    background-color: white;
+    
+}
+
+
+#right-side {
+    width: 400px;
+    background-color: #39A9AA;
+    height: 290px;
+    float:left;
+}
+
