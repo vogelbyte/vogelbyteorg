@@ -1,33 +1,33 @@
-<div id="left-side">
-<mat-card class="example-card">
-  <h2>Sign in into XYZ</h2>
-  <mat-card-header>
-    <!-- <mat-card-title>Login</mat-card-title> -->
-  </mat-card-header>
-  <mat-card-content>
-    <form class="example-form">
-      
-        
-            <mat-form-field class="example-full-width" appearance="outline">
-            <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
-            <mat-icon matPrefix>account_circle</mat-icon>
-            </mat-form-field>
-          
-        <mat-form-field class="example-full-width" appearance="outline">
-          <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
-          <!-- <span matPrefix>lock</span> -->
-          <mat-icon matPrefix>lock</mat-icon>
-         
-        </mat-form-field>
-    </form>
-    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
-  </mat-card-content>
-  <mat-card-actions>
 
-    <button mat-raised-button (click)="login()" color="primary">Login</button>
-  </mat-card-actions>
-</mat-card>
-</div>
-<div id="right-side">
-  hello user
+    <div class="main">
+    <mat-card class="header">
+                
+
+      <!-- form div -->
+      <mat-card-content class="input-form" >
+                  <h2 class="company-name">Sign in into XYZ Limited</h2>
+        <!-- <form>
+                  <mat-form-field class="input-field" appearance="outline">
+                        <input class="user-name" matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+                        <mat-icon matPrefix>account_circle</mat-icon>
+                  </mat-form-field>
+                
+                  <mat-form-field class="input-field" appearance="outline">
+                        <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+                        <mat-icon matPrefix>lock</mat-icon>            
+                  </mat-form-field>
+         </form>      -->
+         <!-- <button class="login-button" mat-raised-button (click)="login()" color="primary">Login</button> -->
+      </mat-card-content>
+      
+      <!-- right div -->
+                   <div class="right-side">
+                          <p class="text">
+                              hello user<br>
+                              this is over login pannel
+                        
+                        </p>
+                   </div>
+      </mat-card>
+   
 </div>
