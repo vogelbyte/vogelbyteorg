@@ -1,32 +1,35 @@
 
     <div class="main">
-    <mat-card class="header">
-                
+    <mat-card class="header">    
 
       <!-- form div -->
       <mat-card-content class="input-form" >
-                  <h2 class="company-name">Sign in into XYZ Limited</h2>
-        <!-- <form>
-                  <mat-form-field class="input-field" appearance="outline">
-                        <input class="user-name" matInput placeholder="Username" [(ngModel)]="username" name="username" required>
-                        <mat-icon matPrefix>account_circle</mat-icon>
-                  </mat-form-field>
-                
-                  <mat-form-field class="input-field" appearance="outline">
-                        <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
-                        <mat-icon matPrefix>lock</mat-icon>            
-                  </mat-form-field>
-         </form>      -->
-         <!-- <button class="login-button" mat-raised-button (click)="login()" color="primary">Login</button> -->
+                  <h2 class="heading">Sign in to XYZ Limited</h2>
+                  <div class="social-icon">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                  </div>
+                  <p class="social-text">or use your email account</p>
+                  
+        <form>              
+            <input class="fa" placeholder=' &#xf2be; Username' [(ngModel)]="username" type="text" name="username" required>
+            
+            <input class="fa" placeholder=" &#xf023; Password" [(ngModel)]="password" type="password" name="password" required>                       
+            <button class="login-button"  (click)="login()" color="primary">
+                  <span class="logintxt">Log in</span>
+            </button>
+               
+      </form>     
+      <p class="copyright">© VogelByte 2019</p>
       </mat-card-content>
       
       <!-- right div -->
                    <div class="right-side">
-                          <p class="text">
-                              hello user<br>
-                              this is over login pannel
-                        
-                        </p>
+                              <h1 class="head">Hello, Friend!</h1>
+                              <p class="quotes">
+                                     “Declare the past, diagnose the present, foretell the future.”
+                              </p>
                    </div>
       </mat-card>
    

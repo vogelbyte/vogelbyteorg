@@ -4,12 +4,13 @@
   background-size: 100% 100%; 
   background-image: url('/assets/images/background.jpg');
 }
+
 .header{
-  top: 79px;
-  width: 70%;
-  height: 500px;
-  opacity: 0.7;
-  left: 15%;
+  top: 75px;
+  width: 55%;
+  height: 75%;
+  // opacity: 0.9;
+  left: 23%;
   border-radius: 10px;
   padding: 0px;
 }
@@ -20,31 +21,114 @@
   float: left;
   background-color:none;
   border-radius: 10px 0 0 10px;
-  opacity: 1;
+  margin-bottom: 0px;
   }
-
-
-.input-field{
-  margin-top: 30px;
-}
-.login-button{
-  margin-top: 50px;
-  width: 40px;
-}
-
 
 .right-side {
   width: 35%;
   height: 100%;
-  background-color: #39A9AA;
+  background-color: #3AABA9;
   float: left;
   border-radius: 0 10px 10px 0;
 }
-.text{
-  margin-top: 90px;
-  font-size: 20px;
+
+
+.input-form .heading{
+  top: 17%;
+  position: relative;
+  left: 24%;
+  color: #3AABA9;
+  font-size: 26px;
+  margin-bottom: 0px;
+ }
+
+ input{
+  width: 40%;
+  height: 8%;
+  position: absolute;
+  background: #F4F8F7; 
+  border: none;
+ }
+
+ form .fa {
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+  font-size: 18px;
 }
- .company-name{
-  margin-top: 30px;
-  text-align: left;
+
+ input[type=text]{
+  top: 47%;
+  left: 13%;
+ }
+
+ input[type=password]{
+  top: 58%;
+  left: 13%;
+ }
+
+ button{
+  position: absolute;
+  top: 71%;
+  left: 22%;
+  width: 21%;
+  height: 7%;
+  border-radius: 34px;
+  border: none;
+  background-color: #3AABA9;
+ }
+
+ .logintxt{
+  color: #F4F8F7;
+  font-size : 18px;
+ }
+
+ .copyright{
+   position: absolute;
+   top: 87%;
+   left: 25%;
+ }
+
+ .right-side .head{
+  color: #F4F8F7;
+  position: absolute;
+  top: 31%;
+  left: 70%;
+  margin: 0px;
+ }
+
+ .right-side .quotes{
+  color: #F4F8F7;
+  font-family: cursive;
+  align-items: center;
+  position: relative;
+  top: 41%;
+  text-align: center;
+  margin: 0px;
+ }
+
+ .social-icon{
+  position: relative;
+  text-align: center;
+  top: 22%;
+  height: 7.8%;
+}
+
+.social-text{
+  position: relative;
+  top: 22%;
+  text-align: center;
+  color: #D0CACA;
+}
+
+ .fa-facebook,.fa-twitter,.fa-linkedin{
+  width: 6.9%;
+  height: 76%;
+  vertical-align: middle;
+  font-size: 21px;
+  padding-top: 5px;
+  text-align: center;
+  color: black;
+  background-color: #F4F8F7;
+  border: 1px solid #D0CACA;
+  border-radius: 96px;
+  margin-left: 3px;
  }
