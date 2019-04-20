@@ -14,6 +14,11 @@
   border-radius: 10px;
   padding: 0px;
 }
+// .img{
+//   height:10px;
+ 
+ 
+// }
 
 .input-form{
   width: 65%;
@@ -75,6 +80,11 @@
   border: none;
   background-color: #3AABA9;
  }
+ .login-button:active {
+  background-color: rgb(41, 192, 189);
+  
+  transform: translate-Y (4px);
+}
 
  .logintxt{
   color: #F4F8F7;
@@ -106,25 +116,31 @@
  }
 
  .social-icon{
+  
   position: relative;
   text-align: center;
   top: 22%;
-  height: 7.8%;
+  height: 6.8%;
+  left: 29%;
+  width: 37%;
 }
+  
+
 
 .social-text{
   position: relative;
   top: 22%;
   text-align: center;
   color: #D0CACA;
+  z-index: -1;
 }
 
  .fa-facebook,.fa-twitter,.fa-linkedin{
-  width: 6.9%;
-  height: 76%;
+  width: 19.9%;
+  height: 80%;
   vertical-align: middle;
   font-size: 21px;
-  padding-top: 5px;
+  padding-top: 7px;
   text-align: center;
   color: black;
   background-color: #F4F8F7;
@@ -132,3 +148,70 @@
   border-radius: 96px;
   margin-left: 3px;
  }
+ .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+   height: 24px;
+  background: #3AABA9;
+   color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  z-index:99999999;
+  top:115%;
+  opacity: 0;
+
+} 
+
+// .tooltiptext{
+//   position: absolute;
+//     text-align: center;
+//     top: 46px;
+//     left: 40px;
+//     width: 120px;
+//     height: 24px;
+//     line-height: 24px;
+//     background: #3AABA9;
+//     color: black;
+//     font-size: 14px;
+//     border-radius: 10px;
+//     // transition: 0.5s;
+//     opacity: 0;
+//     visibility: display;
+// }
+.tooltiptext::before{
+ 
+  content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #3AABA9;
+    top: -5px;
+    transform: 45deg;
+    transform: rotate(45deg);
+    left: 11px;
+    z-index: 9999999;
+}
+
+
+ .fa-facebook:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  left: 40px;
+}
+
+
+.fa-twitter:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  left: 80px;
+}
+
+.fa-linkedin:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  left: 120px;
+}
