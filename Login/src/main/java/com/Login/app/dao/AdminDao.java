@@ -5,4 +5,6 @@ import com.Login.app.entity.Admin;
 
 public interface AdminDao extends CrudRepository<Admin, Integer> {
 
+	Admin findByEmail(String email);
+
 }
