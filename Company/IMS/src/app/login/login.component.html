@@ -1,10 +1,11 @@
     <div class="main">
     <mat-card class="header">    
-            <!-- <div class="img" ><img ng-src="assets/images/logo.png"></div> -->
-      <!-- form div -->
+       
+       <!-- form div -->
       <mat-card-content class="input-form" >
-            
+            <span class="logo" ><img src="assets/images/logo.png" height="35px" width="90px"> </span>  
                   <h2 class="heading">Sign in to XYZ Limited</h2>
+                  
                   <div class="social-icon">
                         <i class="fa fa-facebook"><span class="tooltiptext">Coming Soon..</span></i>
                         <i class="fa fa-twitter"><span class="tooltiptext">Coming Soon..</span></i>
@@ -15,17 +16,17 @@
                    <p class="social-text">or use your email account</p>
                   
         <form>              
-            <input class="fa" placeholder=' &#xf2be; Username' [(ngModel)]="username" type="text" name="username" required>
+            <input class="fa" placeholder="&#xf2be; Username" [(ngModel)]="username" type="text" name="username" required>
             
-            <input class="fa" placeholder=" &#xf023; Password" [(ngModel)]="password" type="password" name="password" required>                       
-            <button class="login-button"  (click)="login()" color="primary">
+            <input class="fa" placeholder="&#xf023; Password" [(ngModel)]="password" type="password" name="password" required>                       
+            <!-- <button class="login-button"  (click)="login()" color="primary">
                   <span class="logintxt">Log in</span>
-            </button>
-               
+            </button> -->
+            <button mat-raised-button (click)="login()" class="logintxt" >login</button>
       </form>     
       <p class="copyright">© VogelByte 2019</p>
       </mat-card-content>
-      
+    
       <!-- right div -->
                    <div class="right-side">
                               <h1 class="head">Hello, Friend!</h1>
