@@ -1,6 +1,7 @@
 package com.Login.app.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -34,9 +35,16 @@ public class Controller {
 		return adminsevice.getAdminById(id);
 	}
 	@PostMapping(value="/login")
-		public Admin getAdminByUsernameAndPassword(@RequestBody Admin email) {
+		public ResponseEntity<Admin> getAdminByemailAndPassword(@RequestBody Admin email) {
 		System.out.println(email.getEmail());
-		return adminsevice.getAdminByUsernameAndPassword(email);
+		Admin data=adminsevice.getAdminByemailAndPassword(email);
+		if(data==null) {
+			System.out.println("your data is "+data);
+			return ResponseEntity.notFound().build();
+		}else {
+			System.out.println("your data is "+data.toString());
 
+			return ResponseEntity.ok().body(data);
+		}
 	}
 }

@@ -20,8 +20,8 @@ public class AdminService {
 		Admin obj= admindao.findById(id).get();
 		 return obj;
 	}
-	public Admin getAdminByUsernameAndPassword(Admin email) {
-		Admin obj = admindao.findByEmail(email.getEmail());	
+	public Admin getAdminByemailAndPassword(Admin email) {
+		Admin obj = admindao.getAdminByemailAndPassword(email.getEmail(),email.getPassword());	
 		return obj;
 	}
 }

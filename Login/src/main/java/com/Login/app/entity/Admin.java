@@ -5,11 +5,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
 import javax.persistence.Table;
 
 
 @Entity
 @Table (name="admin")
+@NamedNativeQueries(value = { @NamedNativeQuery(name = "Admin.getAdminByUsernameAndPassword", query = "SELECT * FROM admin WHERE email=?1 And password=?2") })
 public class Admin {
 
 	@Id
