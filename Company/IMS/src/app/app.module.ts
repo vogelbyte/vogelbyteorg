@@ -8,12 +8,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
     CustomMaterialModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+   
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
