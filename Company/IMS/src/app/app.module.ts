@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BillComponent } from './bill/bill.component';
+import { NotesComponent } from './notes/notes.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     LoginComponent,
     UserComponent,
-    DashboardComponent
+    DashboardComponent,
+    BillComponent,
+    NotesComponent
   ],
   imports: [
     BrowserModule,

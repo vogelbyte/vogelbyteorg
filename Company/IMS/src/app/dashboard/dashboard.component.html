@@ -5,7 +5,7 @@
         <mat-sidenav #sidenav id="sidenave"
         [class.menu-open]="isMenuOpen"
         [class.menu-close]="!isMenuOpen"
-         mode="over"  opened >
+        mode="over"  opened >
           left Pannel
         </mat-sidenav>
         
@@ -17,15 +17,14 @@
                      Home
              </mat-toolbar> 
              <mat-toolbar class="mini-nav"></mat-toolbar>
-
-
-             <div class="label-div">
-             <mat-tab-group class="label-tabs">
-                <mat-tab class="mat-tab-label" label="Notification">Notification</mat-tab>
-                <mat-tab class="mat-tab-label" label="Notes">Notes</mat-tab>
-                <mat-tab class="mat-tab-label" label="Reminder">Reminder</mat-tab>
-                </mat-tab-group>
-              </div>
+                  <div class="notes">
+                      <app-notes></app-notes>
+                    </div>
+             
+                  <div class="bill">
+                   <app-bill></app-bill>
+                </div>
+                
      </mat-sidenav-content>
       
 </mat-sidenav-container>

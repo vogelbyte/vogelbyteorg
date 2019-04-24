@@ -7,7 +7,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation:ViewEncapsulation.None,
 })
 export class DashboardComponent implements OnInit {
-  isMenuOpen=false;
+  isMenuOpen=true;
   constructor() { }
 
   ngOnInit() {

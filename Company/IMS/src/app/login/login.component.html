@@ -15,14 +15,12 @@
                   
                    <p class="social-text">or use your email account</p>
                   
-        <form>              
+        <form  (ngSubmit)="onSubmit()">              
             <input class="fa" placeholder="&#xf2be; Username" [(ngModel)]="username" type="text" name="username" required>
             
             <input class="fa" placeholder="&#xf023; Password" [(ngModel)]="password" type="password" name="password" required>                       
-            <!-- <button class="login-button"  (click)="login()" color="primary">
-                  <span class="logintxt">Log in</span>
-            </button> -->
-            <button mat-raised-button (click)="login()" class="logintxt" >login</button>
+         
+            <button mat-raised-button  class="logintxt" >login</button>
       </form>     
       <p class="copyright">© VogelByte 2019</p>
       </mat-card-content>

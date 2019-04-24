@@ -1,7 +1,7 @@
 // 1.toolbar(header)
 // 2.sidenav(left-nav)
-//3.notes pannel
-
+// 3.bill
+// 4.notes
 
 
  ////////toolbar(header)////
@@ -43,27 +43,20 @@
  }
  
 
-///////notes pannel///////
-.mat-tab-label.mat-tab-label {
-    min-width: 33.3%;
-    background-color: blue; 
-    }
-    .mat-tab-label .mat-tab-label-content {
-    color: white;
-    font-size: 8px;
-    }
-    .mat-tab-group{
-        height: 391px;
-        width: 257px;
-        border: 1px solid black;
-        float: left;
-        background-color: white;
-    }
-.label-div{
-    height: 619px;
-    background-color: black;
-    width: 254px;
-    float: left;
-    border: 1px solid;
+///////notes//////
+.notes{
+    float: right;
+    height: 100%;
+    width: 19%;
+    background-color: white;
+  
+}
+
+///////bill////
+.bill{
+    height: 69%;
+    width: 100%;
+    margin-top: 12%;
+    background-color:peru;
 
 }
