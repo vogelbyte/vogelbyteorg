@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router, ActivatedRoute } from '@angular/router';
-import { ServiceService } from '../service.service';
-import { AlertService } from '../alert.service';
-import { Admin } from '../admin';
+import {Router} from '@angular/router';
+import {MatDialog} from '@angular/material'
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -35,6 +32,28 @@ export class LoginComponent implements OnInit {
     //       username: ['', Validators.required],
     //       password: ['', Validators.required]
     //   });
+    private router: Router,
+    private http: HttpClient
+    ) { }
+username: string;
+password: string;
+  ngOnInit() {
+  }
+  login() : void {
+
+    let body = {
+        "email":"dheeraj@gmail.com",
+        "password":"5252"
+        };
+   this.http.post("http://localhost:8082/api/admins/login",body).subscribe((data:any)=>{
+      console.log("this is here ==>",data);
+   });
+   
+
+    if(this.username == 'admin' && this.password == 'admin'){
+     this.router.navigate(["user"]);
+    }else {
+      alert("Invalid credentials");
     }
 
     onSubmit() {
