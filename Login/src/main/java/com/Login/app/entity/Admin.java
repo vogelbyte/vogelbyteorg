@@ -25,11 +25,51 @@ public class Admin {
 	
 	@Column(name="password")
 	private String password;
-
-	@Override
-	public String toString() {
-		return "Admin [id=" + id + ", email=" + email + ", password=" + password + "]";
+	
+	@Column(name="phone_no")
+	private String phoneno;
+	
+	@Column(name="Medical_name")
+	private String medical;
+	
+	public String getPhoneno() {
+		return phoneno;
 	}
+
+	public void setPhoneno(String phoneno) {
+		this.phoneno = phoneno;
+	}
+
+	public String getMedical() {
+		return medical;
+	}
+
+	public void setMedical(String medical) {
+		this.medical = medical;
+	}
+
+	public String getAddress() {
+		return Address;
+	}
+
+	public void setAddress(String address) {
+		Address = address;
+	}
+
+	public String getRole() {
+		return Role;
+	}
+
+	public void setRole(String role) {
+		Role = role;
+	}
+
+	@Column(name="Address")
+	private String Address;
+	
+	@Column(name="Role")
+	private String Role;
+	
 
 	public int getId() {
 		return id;
@@ -54,6 +94,13 @@ public class Admin {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	@Override
+	public String toString() {
+		return "Admin [id=" + id + ", email=" + email + ", password=" + password + ", phoneno=" + phoneno + ", medical="
+				+ medical + ", Address=" + Address + ", Role=" + Role + "]";
+	}
+	
 	
 	
 }

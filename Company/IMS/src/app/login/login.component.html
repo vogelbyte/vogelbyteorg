@@ -1,6 +1,6 @@
     <div class="main">
     <mat-card class="header">    
-       
+            {{userModel | json }}
        <!-- form div -->
       <mat-card-content class="input-form" >
             <span class="logo" ><img src="assets/images/logo.png" height="35px" width="90px"> </span>  
@@ -14,11 +14,15 @@
                   </div>
                   
                    <p class="social-text">or use your email account</p>
+                    
+        <form  (ngSubmit)="onSubmit()" #form="ngForm"> 
                   
-        <form  (ngSubmit)="onSubmit()">              
-            <input class="fa" placeholder="&#xf2be; Username" [(ngModel)]="username" type="text" name="username" required>
             
-            <input class="fa" placeholder="&#xf023; Password" [(ngModel)]="password" type="password" name="password" required>                       
+                 
+                        
+            <input class="fa" placeholder="&#xf2be; Username" [(ngModel)]="userModel.email"  type="text" name="username" required>
+          
+            <input class="fa" placeholder="&#xf023; Password" [(ngModel)]="userModel.password" type="password" name="password" required>                       
          
             <button mat-raised-button  class="logintxt" >login</button>
       </form>     

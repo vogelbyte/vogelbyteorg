@@ -7,7 +7,7 @@ import { Admin} from './admin';
 })
 export class ServiceService {
 
-  _url='http://localhost:4200/login';
+  _url='http://localhost:8082/api/admins/login';
   constructor(private _http: HttpClient) { }
 
   login(user :Admin){

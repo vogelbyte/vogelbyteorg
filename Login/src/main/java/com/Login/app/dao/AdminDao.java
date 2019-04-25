@@ -5,6 +5,6 @@ import com.Login.app.entity.Admin;
 
 public interface AdminDao extends CrudRepository<Admin, Integer> {
 
-	Admin getAdminByemailAndPassword(String email,String password);
+	Admin getAdminByEmailAndPassword(String email,String password);
 
 }

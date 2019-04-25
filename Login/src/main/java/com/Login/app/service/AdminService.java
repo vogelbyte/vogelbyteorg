@@ -21,7 +21,7 @@ public class AdminService {
 		 return obj;
 	}
 	public Admin getAdminByemailAndPassword(Admin email) {
-		Admin obj = admindao.getAdminByemailAndPassword(email.getEmail(),email.getPassword());	
+		Admin obj = admindao.getAdminByEmailAndPassword(email.getEmail(),email.getPassword());	
 		return obj;
 	}
 }

@@ -14,11 +14,11 @@ import { AlertService } from '../alert.service';
 })
 export class LoginComponent implements OnInit {
  
-
+  
   // submitted = false;
   returnUrl: string;
   loginForm: FormGroup;
-  userModel=new Admin(1,'admin','admin');
+  userModel=new Admin('','');
  
 
   constructor(
@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit {
   //     alert("Invalid credentials");
   //   }
 
-    onsubmit() {
+    onSubmit() {
       // this.submitted = true;
       this.serviceService.login(this.userModel)
       .subscribe(
