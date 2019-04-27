@@ -12,7 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BillComponent } from './bill/bill.component';
 import { NotesComponent } from './notes/notes.component';
 
-
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { NotesComponent } from './notes/notes.component';
     UserComponent,
     DashboardComponent,
     BillComponent,
-    NotesComponent
+    NotesComponent,
+    
   ],
   imports: [
     BrowserModule,
