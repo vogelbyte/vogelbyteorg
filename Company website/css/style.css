@@ -67,6 +67,18 @@ body {
     padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 }
 
+.logo{
+	position: absolute;
+    top: 18%;
+    left: -2%;
+}
+
+.logotext{
+	height: 69%;
+    position: absolute;
+    top: 42%;
+}
+
 ::-moz-selection {
 	color:#333;
 }
