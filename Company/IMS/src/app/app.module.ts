@@ -11,8 +11,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BillComponent } from './bill/bill.component';
 import { NotesComponent } from './notes/notes.component';
+import { ResizableModule } from 'angular-resizable-element';
+import { TicketsComponent } from './tickets/tickets.component';
 
-import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     DashboardComponent,
     BillComponent,
     NotesComponent,
-    
+    TicketsComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-   
+    ResizableModule,
     
   ],
   providers: [],
