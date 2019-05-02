@@ -1,48 +1,54 @@
-<!-- 
+
 
 <mat-sidenav-container fullscreen class="sidenav-container">   
 
-        <mat-sidenav #sidenav id="sidenave"
+        <!-- <mat-sidenav #sidenav id="sidenave"
         [class.menu-open]="isMenuOpen"
         [class.menu-close]="!isMenuOpen"
         mode="over"  opened >
           left Pannel
-        </mat-sidenav>
+        </mat-sidenav> -->
         
     <mat-sidenav-content class="content"> 
-            <mat-toolbar class="header" >
-                  <button mat-icon-button (click)="sidenav.toggle()">
-                        <mat-icon>menu</mat-icon>
-                  </button>
-                     Home
-             </mat-toolbar> 
-             <mat-toolbar class="mini-nav"></mat-toolbar>
-                  <div class="notes">
-                      <app-notes></app-notes>
-                    </div>
-             
-                  <div class="bill">
-                   <app-bill></app-bill>
-                </div>
-                
+                        <mat-toolbar class="header" >
+                             <button mat-icon-button (click)="sidenav.toggle()">
+                                 <mat-icon>menu</mat-icon>
+                             </button>
+                               Home
+                         </mat-toolbar> 
+               <table cellspacing="0" style="width:100%; height:93%" >   
+                    <tr>      
+                         <td class="mini-nav"> 
+                            <mat-toolbar class="mini-nav"></mat-toolbar>
+                        </td>
+                        
+  <!-- ///////////////////////notes-panel/////////////////////////////////////     --> 
+                      
+                         <td class="notes" rowspan="3"> <app-notes></app-notes> </td>
+                        
+                         </tr>
+    <!-- //////////////////tickets/////////////////////////////////////////////  -->
+               <!-- <div class="tickets">   --> <!-- </div> -->
+                    <tr>
+                      <td class="tickets">
+                          <app-tickets></app-tickets>   
+                      </td>
+                      
+                   </tr>              
+ <!-- ///////////////////////bill-panel/////////////////////////////////////            -->
+                  <!-- <div class="bill"> --> <!-- </div> -->
+                    <tr>
+                        <td class="bill">     </td>
+                        <!-- <app-bill></app-bill> -->
+                   </tr>
+               
+              </table>
      </mat-sidenav-content>
       
 </mat-sidenav-container>
   
-  <mat-toolbar class="mini">
-
-  </mat-toolbar>
-   -->
-  
 
 
 
-   <mat-grid-list cols="4" rowHeight="100px">
-    <mat-grid-tile
-        *ngFor="let tile of tiles"
-        [colspan]="tile.cols"
-        [rowspan]="tile.rows"
-        [style.background]="tile.color">
-      {{tile.text}}
-    </mat-grid-tile>
-  </mat-grid-list>
+
+   

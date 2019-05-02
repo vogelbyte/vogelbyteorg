@@ -1,0 +1,5 @@
+1. make a table
+2. put all the dasboard content into table
+3. working on resizable eventy
+  time 10:20am-4:30pm
+   
