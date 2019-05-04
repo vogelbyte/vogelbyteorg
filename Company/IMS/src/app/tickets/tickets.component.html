@@ -1,5 +1,5 @@
 <div class="ticketdiv" >
-  <button mat-raised-button *ngFor="let enum of enum_details" class="mat-raised-button" [ngStyle]="{'background-color': blue}">
+  <button mat-raised-button *ngFor="let enum of enum_details" class="mat-raised-button" [ngStyle]="{background-color:data.toString()}">
   {{height}}
   {{enum.name}}
   </button>

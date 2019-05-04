@@ -53,10 +53,7 @@
     height: 103%;
     overflow: auto;
 }
-// .content{
-//     background-color: aqua;
-  
-// }
+
 .mat-sidenav-content.mat-sidenav-content{
     height: 104%;
 }
@@ -71,23 +68,27 @@
 //     position: absolute;
 //     padding-top: 14px;
 // }
-
+.parent-table{
+    width:100%; 
+    height:93%;
+    border:1px;
+}
 .tickets{
-    height:2.1%;    
-    background-color:red;
+    height:0.8%;    
+    background-color:#E0DCDC;
 }
 .mini-nav{
     width: 84%;
-    height:1%;
-     background-color:yellow;
+    height:1.5%;
+    
 }
 .notes{
   
      width:16%;
     height:100% ;
-     background-color:blue;
+     
 }
 .bill{
-     height:12% ;
-      background-color:green;
+     height:21% ;
+      background-color:rgb(191, 224, 240);
 }

@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TicketsComponent implements OnInit {
 
-  // getRandomColor() {
-  //   var color = Math.floor(0x1000000 * Math.random()).toString(16);
-  //   return '#' + ('000000' + color).slice(-6);
-  //   }
+  data:any;
+
+  getRandomColor() {
+    var color = Math.floor(0x1000000 * Math.random()).toString(16);
+    return '#' + ('000000' + color).slice(-6);
+    }
 
   enum_details = [
     {name: 'static'},
@@ -18,11 +20,17 @@ export class TicketsComponent implements OnInit {
     {name: 'generate'},
     {name: 'rohit'},
     {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
     
     ] 
   constructor() { }
 
   ngOnInit() {
+      this.data =  this.getRandomColor();
+      console.log("COLOR==>",this.data);
   }
+
+  
 
 }
