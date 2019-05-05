@@ -1,8 +1,10 @@
 .ticketdiv{
     height: 100%;
     width: 100%;
-    
+    overflow: auto;
+    white-space: nowrap;
     }
+    
     .mat-raised-button.mat-raised-button{
     margin-left:50px; 
     background-color: aqua;

@@ -1,8 +1,10 @@
 <div class="ticketdiv" >
-  <button mat-raised-button *ngFor="let enum of enum_details" class="mat-raised-button" [ngStyle]="{background-color:data.toString()}">
+  <button mat-raised-button *ngFor="let enum of enum_details" class="mat-raised-button">
   {{height}}
   {{enum.name}}
   </button>
+  <!-- <input type="button" *ngFor="let enum of enum_details" [style.background-color]="getRandomColor()"> -->
+
   </div>
   
-  
+  <!-- data.toString() -->
