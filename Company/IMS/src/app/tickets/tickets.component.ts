@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
   selector: 'app-tickets',
@@ -11,6 +12,9 @@ export class TicketsComponent implements OnInit {
   //   var color = Math.floor(0x1000000 * Math.random()).toString(16);
   //   return '#' + ('000000' + color).slice(-6);
   //   }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
 
   enum_details = [
     {name: 'static'},
@@ -18,11 +22,22 @@ export class TicketsComponent implements OnInit {
     {name: 'generate'},
     {name: 'rohit'},
     {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
     
     ] 
-  constructor() { }
+    
+  constructor() {
+    
+   }
 
   ngOnInit() {
   }
-
+  
 }

@@ -13,6 +13,7 @@ import { BillComponent } from './bill/bill.component';
 import { NotesComponent } from './notes/notes.component';
 import { ResizableModule } from 'angular-resizable-element';
 import { TicketsComponent } from './tickets/tickets.component';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TicketsComponent } from './tickets/tickets.component';
     DashboardComponent,
     BillComponent,
     NotesComponent,
+    TicketsComponent,
     TicketsComponent
   ],
   imports: [
@@ -32,6 +34,7 @@ import { TicketsComponent } from './tickets/tickets.component';
     AppRoutingModule,
     HttpClientModule,
     ResizableModule,
+    ScrollToModule.forRoot(),
     
   ],
   providers: [],
