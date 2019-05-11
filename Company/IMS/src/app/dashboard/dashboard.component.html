@@ -16,7 +16,7 @@
                              </button>
                                Home
                          </mat-toolbar> 
-               <table cellspacing="0" style="width:100%; height:93%" >   
+               <table cellspacing="0" class="parent-table">   
                     <tr>      
                          <td class="mini-nav"> 
                             <mat-toolbar class="mini-nav"></mat-toolbar>
@@ -28,7 +28,7 @@
                         
                          </tr>
     <!-- //////////////////tickets/////////////////////////////////////////////  -->
-               <!-- <div class="tickets">   --> <!-- </div> -->
+               
                     <tr>
                       <td class="tickets">
                           <app-tickets></app-tickets>   
@@ -36,10 +36,12 @@
                       
                    </tr>              
  <!-- ///////////////////////bill-panel/////////////////////////////////////            -->
-                  <!-- <div class="bill"> --> <!-- </div> -->
+                  
                     <tr>
-                        <td class="bill">     </td>
-                        <!-- <app-bill></app-bill> -->
+                        <td class="bill">  
+                           <app-bill></app-bill> 
+                       </td>
+                        
                    </tr>
                
               </table>

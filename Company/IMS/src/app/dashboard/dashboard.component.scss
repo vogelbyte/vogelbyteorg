@@ -1,7 +1,7 @@
 // 1.toolbar(header)
 // 2.sidenav(left-nav)
 // 3.tickect nav
-// 4.bill
+// 4.parent-table-css
 
 
 
@@ -35,9 +35,7 @@
     height: 100%;
     background-color: #fff;
     width: 100%;
-    // position: absolute;
-    // padding: 0 1px;
-    // margin-top: -3px;
+   
 }
 .mat-toolbar-single-row.header {
     height: 48px;
@@ -53,41 +51,35 @@
     height: 103%;
     overflow: auto;
 }
-// .content{
-//     background-color: aqua;
-  
-// }
+
 .mat-sidenav-content.mat-sidenav-content{
     height: 104%;
 }
 
 
-////////////////////////////bill///////////////////////
-// .bill{
-//     height: 71%;
-//     width: 83%;
-//     margin-top: 9%;
-//     background-color: peru;
-//     position: absolute;
-//     padding-top: 14px;
-// }
+////////////////////////////parent-table-css///////////////////////
 
+.parent-table{
+    width:100%; 
+    height:93%;
+    border:1px;
+}
 .tickets{
-    height:2.1%;    
-    background-color:red;
+    height:0.8%;    
+    background-color:#E0DCDC;
 }
 .mini-nav{
     width: 84%;
-    height:1%;
-     background-color:yellow;
+    height:1.5%;
+    
 }
 .notes{
   
      width:16%;
     height:100% ;
-     background-color:blue;
+     
 }
 .bill{
-     height:12% ;
-      background-color:green;
+     height:21% ;
+     padding:0px;
 }

@@ -1,9 +1,15 @@
 .ticketdiv{
+<<<<<<< HEAD
     height: 60px;
     width: 1150px;
     background-color: #e3e3ec;
     overflow-x: hidden;
     overflow-y: hidden;
+=======
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+>>>>>>> 3514e325acfb3026b49625c95345f6f2cde99ee8
     white-space: nowrap;
     }
     
@@ -18,8 +24,11 @@
     font-size: 12px;
     color: #fff;
     border-radius: 0px;
+<<<<<<< HEAD
     box-shadow: none;
     display: inline-block;
     flex: 0 0 auto;
   
+=======
+>>>>>>> 3514e325acfb3026b49625c95345f6f2cde99ee8
     }
