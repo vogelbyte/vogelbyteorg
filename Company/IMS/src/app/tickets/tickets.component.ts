@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
 
 @Component({
   selector: 'app-tickets',
@@ -7,6 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TicketsComponent implements OnInit {
 
+<<<<<<< HEAD
+  // getRandomColor() {
+  //   var color = Math.floor(0x1000000 * Math.random()).toString(16);
+  //   return '#' + ('000000' + color).slice(-6);
+  //   }
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
+=======
   // data:any;
 
   getRandomColor() {
@@ -25,6 +35,7 @@ export class TicketsComponent implements OnInit {
   //     return color;
   // }
   
+>>>>>>> 3514e325acfb3026b49625c95345f6f2cde99ee8
 
   enum_details = [
     {name: 'static'},
@@ -34,15 +45,31 @@ export class TicketsComponent implements OnInit {
     {name: 'kapil'},
     {name: 'kapil'},
     {name: 'kapil'},
+<<<<<<< HEAD
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+    {name: 'kapil'},
+=======
+>>>>>>> 3514e325acfb3026b49625c95345f6f2cde99ee8
     
     ] 
-  constructor() { }
+    
+  constructor() {
+    
+   }
 
   ngOnInit() {
       // this.data =  this.getRandomColor();
       // console.log("COLOR==>",this.data);
   }
+<<<<<<< HEAD
+  
+=======
 
   
 
+>>>>>>> 3514e325acfb3026b49625c95345f6f2cde99ee8
 }

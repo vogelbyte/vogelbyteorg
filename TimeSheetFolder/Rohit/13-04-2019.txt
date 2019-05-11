@@ -14,3 +14,28 @@
 	 ---> menubar
 	 ---> input field flat icon
 	 ---> Image resizing (working)
+	 
+	 ()=>this.config={nconsole.log("hello")};
+	 
+	 
+	 var body={
+	 
+	 };
+	 
+	 var methodname = function(){
+	 
+	 }
+	 (data:string)=> this.config={}
+	 
+	 (data: string)=>console.log(data);
+	 
+	 if(condition){
+		console.log(data);
+	 }
+	 
+	  if(condition)
+		console.log(data);
+	 
+	 function(data){
+	 console.log(data);
+	 }
