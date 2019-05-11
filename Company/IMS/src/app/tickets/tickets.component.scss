@@ -1,15 +1,17 @@
 .ticketdiv{
-    height: 100%;
+    padding-top: 10px;
+    height: 69px;
     width: 100%;
     overflow: auto;
     white-space: nowrap;
+   
     }
     
     .mat-raised-button.mat-raised-button{
-    margin-left:50px; 
-    background-color: aqua;
-    height: 100%;
-    width:100px;
+        margin-left: 23px;
+        background-color: aqua;
+        height: 61px;
+        width: 106px;
     border-bottom: 15px solid rgba(15, 13, 13, 0.3);
     text-align: left;
     text-decoration-line:unset;

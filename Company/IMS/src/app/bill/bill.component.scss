@@ -2,10 +2,11 @@
 /// 2.child div
 /// 3.upper-field-table-css
 /// 4.bill-data-table
+/// 5. left-data-table
 
 ////////////////parent-div////////////////
 .parent{
-    height: 557px;
+    height: 505px;
     width: 100%;
     background-color: rgba(99, 96, 96, 0.589); 
 }
@@ -13,22 +14,24 @@
 ////////////////child-div////////////////
 .right-child{
     height: 95%;
-    width: 79%;
+    width: 81%;
     float: left;
     padding-bottom:3%;
+    background-color: aliceblue;
 }
 
 .left-child{
     height: 95%;
-    width: 21%;
-    background-color: aqua;
+    width: 19%;
     float: left;
     padding-bottom:3%;
+    background-color: aliceblue;
 }
 /////////////////upper-field-table-css///////////////
 .left-field{
     float: left; 
     margin-left: 12px;
+  
 }
 .center-field{
     float: left;
@@ -38,21 +41,75 @@
     float: left;
     margin-left: 21px;
 }
+h1{
+   
+    border-bottom:1px solid #000;   
+    text-align: left;
+    font-size: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
 /////////////////////bill-data-table/////////////
+
 .bill-table{
-    border: 1px solid black;
-//   border-collapse: collapse;
+    border-collapse: collapse;
      width: 100%;
+     height: 340px;
 }
 th{
     background-color:#02C850;
     border: 1px solid black;
-    //  width: 1%;
+   
 }
-table.bill-table td{
+.bill-table td{
     border: 1px solid black;
     background-color:white;
-    // height: 17px;
+    width: 19px;
+    
+}
 
+// .bill-table tr:nth-child(even){background-color: #d62424;}
+// .bill-table tr:hover {background-color: rgb(218, 60, 60);}
+
+///////////////////////////footer-data///////////////////
+.lower-field{
+    height: 108px;
+    border-top: 1px solid black;
+    padding-top: 9px;
+    width: 101%;
+    margin-left: -2px;
+}
+.right1{
+    float: right;
+    margin-left: 380px;
+}
+.right2{
+    float: right;
+    margin-left: 24px;
+}
+///////////////////////left-data-table/////////////////
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+  
+}
+.header-content{
+    font-size: 14px;
+    align-items: flex-start;  
+    padding-top: 6px; 
+}
+
+.mat-extention{
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 105%;
+    width: 100%;
+}
+.mat-panel{
+    background-color: burlywood;
+}
+
+.mat-expansion-panel-content > .mat-expansion-panel-body {
+    
+    padding: 0 10px 7px;
 }

@@ -4,10 +4,11 @@
     min-width: 33.3%;
     background-color: rgb(6, 78, 136);
     padding: 0px 1px;
+    height: 40px;
 }
     .mat-tab-label .mat-tab-label-content {
     color: white;
-    font-size: 10px;
+    font-size: 12px;
     }
     .mat-tab-group{
         height: 100%;
@@ -27,9 +28,10 @@
         /* border: 2px solid #E0DCDC; */
         background-color: #E0DCDC;
         padding: 0 px;
-        margin-top: -22px;
-        width: 100%;
-        padding-top: 0px;
+         margin-top: -25px;
+          width: 100%;
+    /* padding-top: 0px; */
+    padding-right: 1px;
     }
     .notes-panel{
     background-color: white;
