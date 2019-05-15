@@ -1,0 +1,25 @@
+.ticketdiv{
+    height: 60px;
+    width: 1150px;
+    background-color: #e3e3ec;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    }
+    
+    .mat-raised-button.mat-raised-button{
+    margin-left:10px; 
+    background-color: aqua;
+    height: 50px;
+    width:100px;
+    border-bottom: 15px solid rgba(15, 13, 13, 0.3);
+    text-align: left;
+    text-decoration-line:unset;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 0px;
+    box-shadow: none;
+    display: inline-block;
+    flex: 0 0 auto;
+  
+    }
