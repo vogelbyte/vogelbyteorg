@@ -1,0 +1,58 @@
+/// 1.parent div
+/// 2.child div
+/// 3.upper-field-table-css
+/// 4.bill-data-table
+
+////////////////parent-div////////////////
+.parent{
+    height: 557px;
+    width: 100%;
+    background-color: rgba(99, 96, 96, 0.589); 
+}
+
+////////////////child-div////////////////
+.right-child{
+    height: 95%;
+    width: 79%;
+    float: left;
+    padding-bottom:3%;
+}
+
+.left-child{
+    height: 95%;
+    width: 21%;
+    background-color: aqua;
+    float: left;
+    padding-bottom:3%;
+}
+/////////////////upper-field-table-css///////////////
+.left-field{
+    float: left; 
+    margin-left: 12px;
+}
+.center-field{
+    float: left;
+    margin-left: 21px;
+}
+.right-field{
+    float: left;
+    margin-left: 21px;
+}
+
+/////////////////////bill-data-table/////////////
+.bill-table{
+    border: 1px solid black;
+//   border-collapse: collapse;
+     width: 100%;
+}
+th{
+    background-color:#02C850;
+    border: 1px solid black;
+    //  width: 1%;
+}
+table.bill-table td{
+    border: 1px solid black;
+    background-color:white;
+    // height: 17px;
+
+}
