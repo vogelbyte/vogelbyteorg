@@ -13,7 +13,8 @@ import { BillComponent } from './bill/bill.component';
 import { NotesComponent } from './notes/notes.component';
 import { ResizableModule } from 'angular-resizable-element';
 import { TicketsComponent } from './tickets/tickets.component';
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { PopuptableComponent } from './popuptable/popuptable.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     BillComponent,
     NotesComponent,
     TicketsComponent,
-    TicketsComponent
+    TicketsComponent,
+    PopuptableComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     AppRoutingModule,
     HttpClientModule,
     ResizableModule,
-    ScrollToModule.forRoot(),
+   
     
   ],
   providers: [],

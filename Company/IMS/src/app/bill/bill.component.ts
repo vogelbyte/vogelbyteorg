@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
+import { PopuptableComponent } from '../popuptable/popuptable.component';
 
 @Component({
   selector: 'app-bill',
@@ -6,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bill.component.scss']
 })
 export class BillComponent implements OnInit {
- 
-  // panel_detail =[
-  //   {tittle:'Unit'},
-  //   {tittle:'Sale Detail'},
-  //   {tittle:'Purchase Detail' ,expanded:'true'},
-  //   {tittle:'Purchase Detail'},
-  // ]
   
   constructor() { }
+  show=false;
+  // constructor(public dialog: MatDialog) {}
 
+  // openDialog() {
+  //   this.dialog.open(PopuptableComponent, {
+      
+  //   });
+  // }
   ngOnInit() {
   }
 

@@ -1,49 +1,137 @@
 <div class="parent">
- 
          <div class="left-child">
             <mat-accordion multi="false">
-                <mat-expansion-panel class="mat-panel" hideToggle >
-                    <mat-expansion-panel-header  class="header-content" [collapsedHeight]="'30px'" [expandedHeight]="'200px'">
+                <mat-expansion-panel class="mat-panel-1"[expanded]="true">
+                    <mat-expansion-panel-header  class="header-content-1"
+                     [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
                      <mat-panel-title>
-                   unit
-                   </mat-panel-title>
-                  <mat-icon class="icon">arrow_right</mat-icon>  
+                       <mat-icon>assessment</mat-icon>&nbsp;
+                     unit
+                    </mat-panel-title>
                   </mat-expansion-panel-header>
-                  <mat-form-field>
+                  <form class="form-content">
+                      Total Unit&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input  class="expension-input" type="unit" name="Total Unit" size="7">
+                    Pack Unit&nbsp;&nbsp;&nbsp;&nbsp; 
+                     <input class="expension-input" type="unit" name="Pack Unit" size="7">
+                     Loose Unit&nbsp;&nbsp;
+                     <input class="expension-input" type="unit" name="loose Unit" size="7"> 
+                   </form>
+              </mat-expansion-panel>
 
-                       Total Unit: 
-                       <INPUT TYPE="unit" NAME="Total Unit" SIZE="10" disabled="disabled"> 
-                     Pack Unit: 
-                      <INPUT TYPE="unit" NAME="Pack Unit" SIZE="10" disabled="disabled"> 
-                      Loose Unit: 
-                      <INPUT TYPE="unit" NAME="loose Unit" SIZE="10" disabled="disabled"> 
-                  </mat-form-field>
-             </mat-expansion-panel>
-            </mat-accordion>
-                   
-          </div>
+              <mat-expansion-panel class="mat-panel-2">
+                  <mat-expansion-panel-header  class="header-content-2"
+                   [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+                   <mat-panel-title>
+                      <mat-icon>payment</mat-icon>&nbsp;
+                   Sale detail
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <form class="form-content">
+                    Total Unit&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  class="expension-input" type="unit" name="Total Unit" size="7">
+                  Pack Unit&nbsp;&nbsp;&nbsp;&nbsp; 
+                   <input class="expension-input" type="unit" name="Pack Unit" size="7">
+                   Loose Unit&nbsp;&nbsp;
+                   <input class="expension-input" type="unit" name="loose Unit" size="7"> 
+                 </form>
+            </mat-expansion-panel>
+
+        
+            <mat-expansion-panel class="mat-panel-3">
+                <mat-expansion-panel-header  class="header-content-3"
+                 [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+                 <mat-panel-title><mat-icon>how_to_vote</mat-icon>&nbsp;
+                 Salt
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <form class="form-content">
+                  Salt&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input  class="expension-input" type="unit" name="Total Unit" size="7">
+                Salt&nbsp;&nbsp;&nbsp;&nbsp; 
+                 <input class="expension-input" type="unit" name="Pack Unit" size="7">
+                 Salt&nbsp;&nbsp;
+                 <input class="expension-input" type="unit" name="loose Unit" size="7"> 
+               </form>
+          </mat-expansion-panel>
+
+        <mat-expansion-panel class="mat-panel-4">
+                    <mat-expansion-panel-header  class="header-content-4"
+                     [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+                     <mat-panel-title> <mat-icon>payment</mat-icon>&nbsp;
+                     Demo
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <form class="form-content">
+                      Demo&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input  class="expension-input" type="unit" name="Total Unit" size="7">
+                      Demot&nbsp;&nbsp;&nbsp;&nbsp; 
+                     <input class="expension-input" type="unit" name="Pack Unit" size="7">
+                     Demo&nbsp;&nbsp;&nbsp;&nbsp;
+                     <input class="expension-input" type="unit" name="loose Unit" size="7"> 
+                   </form>
+              </mat-expansion-panel>
+     </mat-accordion>       
+
+
+              <mat-expansion-panel class="mat-panel-5"[expanded]="true">
+                  <mat-expansion-panel-header  class="header-content-5"
+                  [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+                  <mat-panel-title><mat-icon>event_note</mat-icon>&nbsp;
+                  Purchase detail
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <form class="form-content">
+                    PUR Unit&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input  class="expension-input" type="unit" name="Total Unit" size="7">
+                    PUR Unit&nbsp;&nbsp;&nbsp;&nbsp; 
+                  <input class="expension-input" type="unit" name="Pack Unit" size="7">
+                  PUR Unit&nbsp;&nbsp;
+                  <input class="expension-input" type="unit" name="loose Unit" size="7"> 
+                </form>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel class="mat-panel-6"[expanded]="true">
+                <mat-expansion-panel-header  class="header-content-6"
+                [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+                <mat-panel-title><mat-icon>wc</mat-icon>&nbsp;
+                test
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <form class="form-content">
+                  PUR Unit&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input  class="expension-input" type="unit" name="Total Unit" size="7">
+                  PUR Unit&nbsp;&nbsp;&nbsp;&nbsp; 
+                <input class="expension-input" type="unit" name="Pack Unit" size="7">
+                PUR Unit&nbsp;&nbsp;
+                <input class="expension-input" type="unit" name="loose Unit" size="7"> 
+              </form>
+          </mat-expansion-panel>
+
+      </div>
         
           
- <!-- ////////////////upper-field///////////////////-->
-<!-- ////////////////////left-field/////////////////// -->
+ <!-- /////////////////////////////////////medicine table/////////////////////////////////////////-->
+<!-- /////////////////////upper-left-field///////////////////////////////// -->
+
           <div class="right-child">
-          <TABLE class="upper-table">
-              <tr>
+          <table class="upper-table">
+              <tr class="heading-row">
                  <h1>Bill PAYMENT</h1>             
               </tr>
             
           <div class="left-field">
                <TR>
-                  <TD>Serial no:</TD>
-                  <TD><INPUT TYPE="Serial no" NAME="Serial no" SIZE="10"></TD>
+                  <td>Serial no:</td>
+                  <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
                </TR>
                <TR>
-                 <TD>Date:</TD>
-                 <TD><INPUT TYPE="default" NAME="Date" SIZE="10"></TD>
+                 <td>Date:</td>
+                 <td><input class="input" type="default" name="Date" size="10"></td>
                </TR>
                <TR>
-                 <TD> Invoice no:</TD>
-                 <TD><INPUT TYPE="Invoice no" NAME="Invoice no" SIZE="10"></TD>
+                 <td> Invoice no:</td>
+                 <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
                </TR>
           </div>
     
@@ -51,44 +139,44 @@
 
          <div class="center-field">
                <TR>
-                <TD>Name</TD>
-                <TD><INPUT TYPE="TEXT" NAME="name" SIZE="10"></TD>&nbsp;
-                <TD>Store:</TD>
-                <TD><INPUT TYPE="TEXT" NAME="Store" SIZE="10"></TD>
+                <td>name</td>
+                <td><input class="input" type="TEXT" name="name" size="10"></td>&nbsp;
+                <td>Store:</td>
+                <td><input class="input" type="TEXT" name="Store" size="10"></td>
               </TR>
               <TR>
-                <TD>Address:</TD>
-                <TD><INPUT TYPE="TEXT" NAME="Address" SIZE="10"></TD>&nbsp;
-                <TD>Phone</TD>
-                <TD><INPUT TYPE="Phone" NAME="Phone" SIZE="10"></TD>
+                <td>Address:</td>
+                <td><input class="input" type="TEXT" name="Address" size="10"></td>&nbsp;
+                <td>Phone</td>
+                <td><input class="input" type="Phone" name="Phone" size="10"></td>
              </TR>
              <TR>
-              <TD> Email:</TD>
-              <TD><INPUT TYPE="TEXT" NAME="email" SIZE="10"></TD>
+              <td> Email:</td>
+              <td><input class="input"type="TEXT" name="email" size="10"></td>
              </TR>
         </div>
 <!-- ////////////////////right-field/////////////////// -->
         <div class="right-field">  
           <TR>
-            <TD>Bill Id:</TD>
-            <TD><INPUT TYPE="Bill no" NAME="Billrial no" SIZE="10"></TD> &nbsp;
-            <TD>PAN no:</TD>
-            <TD><INPUT TYPE="Pan no" NAME="Pan no" SIZE="10"></TD> 
+            <td>Bill Id:</td>
+            <td><input class="input" type="Bill no" name="Billrial no" size="10"></td> &nbsp;
+            <td>PAN no:</td>
+            <td><input class="input" type="Pan no" name="Pan no" size="10"></td> 
           </TR>
           <TR>
-            <TD>GST:</TD>
-            <TD><INPUT TYPE="default" NAME="Date" SIZE="10"></TD>
+            <td>GST:</td>
+            <td><input class="input" type="default" name="Date" size="10"></td>
          </TR>
          <TR>
-            <TD> DL no:</TD>
-            <TD><INPUT TYPE="Dl no" NAME="Dl no" SIZE="10"></TD>
+            <td> DL no:</td>
+            <td><input class="input" type="Dl no" name="Dl no" size="10"></td>
          </TR>
       </div>
- <!-- /////////////////////bill-data-table//////////////////-->
-        <div class="bill-table">       
+ <!-- /////////////////////medicine-data-table//////////////////-->
+        <div class="medicine-table">       
                     <tr>
                       <th>Code</th>
-                      <th>Name</th> 
+                      <th>medicine</th> 
                       <th>Batch</th>
                       <th>Exp.</th>
                       <th>Qty.</th> 
@@ -99,30 +187,37 @@
                       <th>Amount</th>
                     </tr>
                     <tr>
-                      <td><input type="" name="code" size="8%"></td>
-                      <td><input type="text" name="Name" size="8%" ></td>
-                      <td><input type="" name="Batch" size="8%" ></td>
-                      <td><input type="" name="Exp" size="8%" ></td>
-                      <td><input type="text" name="Qty" size="8%" ></td>
-                      <td><input type="" name="GST" size="8%" ></td>
-                      <td><input type="" name="Sale Rs" size="8%" ></td>
-                      <td><input type="" name="Dis" size="8%" ></td>
-                      <td><input type="" name="Inc Rate" size="8%" ></td>
-                      <td><input type="" name="Amount" size="8%" ></td>
+                      <td><input class="medicine-row" (click)="show=true" type="" name="code" size="8%"></td>
+                      <td><input class="medicine-row" (click)="show=true" type="text" name="medicine" size="8%" ></td>
+                      <td><input class="medicine-row" type="" name="Batch" size="8%" ></td>
+                      <td><input class="medicine-row" type="" name="Exp" size="8%" ></td>
+                      <td><input class="medicine-row" type="text" name="Qty" size="8%" ></td>
+                      <td><input class="medicine-row" type="" name="GST" size="8%" ></td>
+                      <td><input class="medicine-row" type="" name="Sale Rs" size="8%" ></td>
+                      <td><input class="medicine-row" type="" name="Dis" size="8%" ></td>
+                      <td><input class="medicine-row" type="" name="Inc Rate" size="8%" ></td>
+                      <td><input class="medicine-row" type="" name="Amount" size="8%" ></td>
                     </tr>
                  
         </div>           
-<!-- ///////////////////////footer-data//////////////////////////// -->
+        <!-- ////////////////////  demo/////////////////////////////////// -->
+        <ng-container *ngIf="show">
+        <div class="poptable">
+          <app-popuptable></app-popuptable>
+        </div>
+      </ng-container>
+<!-- ///////////////////////medicine-footer-data//////////////////////////// -->
                   <div class="lower-field">
                       <TR>
-                        <TD class="left">Discount:</TD>
-                        <TD><INPUT TYPE="Serial no" NAME="Serial no" SIZE="10"></TD>
-                          <TD class="right1">Gst:</TD>
-                        <TD><INPUT TYPE="default" NAME="Date" SIZE="10"></TD>
-                           <TD class="right2"> Net Amount:</TD>
-                        <TD><INPUT TYPE="Invoice no" NAME="Invoice no" SIZE="10"></TD>
+                        <td class="left">Discount:</td>
+                        <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+                          <td class="right1">Gst:</td>
+                        <td><input class="input" type="default" name="Date" size="10"></td>
+                           <td class="right2"> Net Amount:</td>
+                        <td><input  class="input" type="Invoice no" name="Invoice no" size="10"></td>
                       </TR>
                   </div>
-    </TABLE>
+    </table>
 </div>
+<app-popuptable></app-popuptable>
 </div>
