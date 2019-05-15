@@ -1,0 +1,34 @@
+
+  <div class="main" [(style.height.px)]="mainheight" >
+    <div class="notes-panel" 
+    mwlResizable
+    [enableGhostResize]="true"
+    resizeCursorPrecision="10"
+    [resizeEdges]="{bottom: true, right: false, top: false, left: false}"
+    (resizeEnd)="onResizeEnd($event)"
+    [(style.height.px)]="height" >
+              
+      <mat-tab-group >
+      <mat-tab class="mat-tab-label" label="Notification">Notification</mat-tab>
+      <mat-tab label="Notes">Notes</mat-tab>
+      <mat-tab label="Reminder">Reminder</mat-tab>
+      </mat-tab-group>
+    
+    </div>
+    <div class="historypanel" 
+    mwlResizable
+    [enableGhostResize]="true"
+    resizeCursorPrecision="10"
+    [resizeEdges]="{bottom: false, right: false, top: true, left: false}"
+    [style.height.px]="historypanelheight">
+        <div class="listdiv">
+        <mat-list role="list">
+        <mat-list-item role="listitem" *ngFor="let enum of enum_details" >{{enum.name}}<mat-divider class="mat-divider"></mat-divider>
+        </mat-list-item>
+        
+        </mat-list>
+      </div>
+
+    </div>
+    </div>
+
