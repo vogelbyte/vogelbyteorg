@@ -1,0 +1,255 @@
+/// 1.parent div
+/// 2.child div
+/// 3.upper-field-table-css
+/// 4.medicine-data-table
+/// 5.left-expension-panel
+
+/////////////////////////////parent-div/////////////////////////////
+.parent{
+    height: 505px;
+    width: 100%;
+    background-color: rgba(99, 96, 96, 0.589); 
+}
+
+////////////////////////////child-div//////////////////////////////
+.right-child{
+    height: 95%;
+    width: 81%;
+    float: left;
+    padding-bottom:3%;
+    background-color: white;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+
+.left-child{
+    height: 95%;
+    width: 18.8%;
+    float: left;
+    padding-bottom: 3%;
+    background-color: white;
+    border-right: 2px solid #e2dede;
+}
+//////////////////////////////////////medicine-table///////////////////////////////
+/////////////////upper-field-table-css///////////////
+.input{
+    background: white;
+    border: 1px solid #c3c1c1;
+    border-radius: 4px;
+   
+}
+.left-field{
+    float: left; 
+    margin-left: 12px;
+    margin-top: -9px;
+}
+.center-field{
+    float: left;
+    margin-left: 21px;
+    margin-top: -9px;
+}
+.right-field{
+    float: left;
+    margin-left: 21px;
+    margin-top: -9px;
+}
+h1{
+   
+    border-bottom:2px solid; 
+    border-image-source: linear-gradient(45deg, #6D7AE0, #ffffff);
+    border-image-slice: 1;
+    text-align: left;
+    
+    font-size: 17px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+.heading-row{
+
+    height: 10px;
+}
+
+/////////////////////medicine-data-table/////////////
+
+.medicine-table{
+    border-collapse: collapse;
+     width: 100%;
+     height: 340px;
+}
+th{
+    background-color: #4454d2;  
+    width: 91px;
+    height: 28px; 
+    color: white;
+    font-weight: normal;
+}
+.medicine-table td{
+     border-bottom: 1px solid #f1eaea;
+    background-color:white;
+    width: 19px;
+    height: 23px;
+  }
+.medicine-row{
+    border:none;
+    height: 17px;
+    text-align: center;
+}
+
+
+// .medicine-table tr:nth-child(even){background-color: #d62424;}
+// .medicine-table tr:hover {background-color: rgb(218, 60, 60);}
+///////////////////////////poptable///////////////////////////////
+.poptable{
+    height: 100px;
+    width: 406px;
+   border-color: #6D7AE0;
+    position: absolute;
+    top: 349px;
+    left: 320px;
+    overflow-y: auto;
+    
+    // display: none;
+}
+
+///////////////////////////footer-field-css///////////////////
+.lower-field{
+    height: 108px;
+    border-top: 2px solid #e2dede;
+    padding-top: 9px;
+    width: 100%;
+}
+.left{
+    color:#1e690c;
+}
+.right1{
+    float: right;
+    margin-left: 399px;
+    color:#0b08de;
+}
+.right2{
+    float: right;
+    margin-left: 19px;
+    color:#de0b29;
+}
+///////////////////////////////////////left-expension-panel/////////////////
+  
+.mat-expansion-panel:not([class*='mat-elevation-z']) {
+    box-shadow: none;
+    border-radius: 0px;
+}
+.mat-expansion-panel {
+  padding: 0;
+  margin: 0;
+}
+// .header-content{
+//     font-size: 14px;
+//     align-items: flex-start;  
+//     padding-top: 6px; 
+//    }
+
+.mat-extention{
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 105%;
+    width: 100%;
+}
+////////////////////expension-unit////////////////
+.mat-panel-1{
+    background-color: #e2c166;
+    margin-top: 2px;
+    padding: 0px;
+   
+}
+.mat-accordion .mat-expansion-panel:first-of-type {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+
+}
+.header-content-1{
+    background-color: #FBC531;
+    font-size: 15px;
+    align-items: flex-start;  
+    padding-top: 6px; 
+    color: #ffffff;
+   }
+
+.form-content{
+    margin-top: 28px;
+    font-weight: 450;
+    font-size: 12px;
+   
+}
+
+////////////////////////expension-sale//////////////
+.mat-panel-2{
+    background-color: #83f571;
+}
+.header-content-2{
+    background-color: #4CD137;
+    font-size: 15px;
+    align-items: flex-start;  
+    padding-top: 6px; 
+    color: #ffffff;
+   }
+
+/////////////////////////////expension-salt////////////
+.mat-panel-3{
+    background-color: #74d0f3;
+}
+.header-content-3{
+    background-color:#33B5E5;
+    font-size: 15px;
+    align-items: flex-start;  
+    padding-top: 6px; 
+    color: #ffffff;
+   }
+//////////////////expension-demo/////////   
+.mat-panel-4{
+    background-color: #e2c166;
+}
+.header-content-4{
+    background-color: #FBC531;
+    font-size: 15px;
+    align-items: flex-start;  
+    padding-top: 6px; 
+    color: #ffffff;
+   }
+
+   /////////////////////////expension-purchase/////////////
+.mat-panel-5{
+    background-color: #83f571;
+   
+}
+.header-content-5{
+    background-color: #4CD137;
+    font-size: 15px;
+    align-items: flex-start;  
+    padding-top: 6px; 
+    color: #ffffff;
+   }
+/////////////////////////expension-test/////////////
+.mat-panel-6{
+    background-color: #74d0f3;
+}
+.header-content-6{
+    background-color: #33B5E5;
+    font-size: 15px;
+    align-items: flex-start;  
+    padding-top: 6px; 
+    color: #ffffff;
+
+   }   
+////////////////////////////////////////////////////////////////
+.mat-accordion .mat-expansion-panel:last-of-type {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.mat-expansion-panel-content > .mat-expansion-panel-body {
+    
+    padding: 0 10px 7px;
+}
+.expension-input{
+    
+    background: none;
+    border: 1px solid #636161;
+    border-radius: 2px;
+}

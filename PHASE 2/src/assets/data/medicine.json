@@ -1,0 +1,58 @@
+[
+    {
+    "_id" : "5cda56eab934e621d8cd400e",
+    "company_id" : "5252",
+    "description" : "medicine",
+    "med_name" : "citrizine",
+    "batch_no" : "64d46",
+    "gst" : "54d5dwwfdf5",
+    "net_rate" : "150",
+    "mrp" : "120",
+    "quantity" : "50mg",
+    "type" : "tab",
+    "exp":"20/5/2019",
+    "discount":"20%",
+    "total_Unit":"20" ,    
+    "pack_Unit" : "30" ,  
+    "loose_Unit":"55" ,
+    "_class" : "com.vogelbyte.main.entity.MedicineDetailEntity"
+},
+{
+    "_id" : "5cda56eab934e621d8cd400f",
+    "company_id" : "5353",
+    "description" : "medicine",
+    "med_name" : "Paracetamol",
+    "batch_no" : "64d46",
+    "gst" : "54d5dwwfdf5",
+    "net_rate" : "150",
+    "mrp" : "120",
+    "quantity" : "100mg",
+    "type" : "tab",
+    "exp":"20/5/2019",
+    "discount":"22%",
+    "total_Unit":"15" ,    
+    "pack_Unit" : "54" ,  
+    "loose_Unit":"565" ,
+    
+    "_class" : "com.vogelbyte.main.entity.MedicineDetailEntity"
+},
+{
+    "_id" :"5cda56eab934e621d8cd400g",
+    "company_id" : "5454",
+    "description" : "medicine",
+    "med_name" : "banadril",
+    "batch_no" : "64d46",
+    "gst" : "54d5dwwfdf5",
+    "net_rate" : "150",
+    "mrp" : "120",
+    "quantity" : "200ml",
+    "type" : "syrap",
+    "exp":"20/5/2019",
+    "discount":"5%",
+    "total_Unit":"52" ,    
+    "pack_Unit" : "12" ,  
+    "loose_Unit":"35" ,
+    
+    "_class" : "com.vogelbyte.main.entity.MedicineDetailEntity"
+}
+]
