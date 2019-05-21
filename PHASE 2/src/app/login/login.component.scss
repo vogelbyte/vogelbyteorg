@@ -1,0 +1,206 @@
+
+.main{
+  height: 100vh;
+  background-size: 100% 100%; 
+  background-image: url('/assets/images/background.jpg');
+}
+
+.header{
+  top: 75px;
+  width: 55%;
+  height: 75%;
+  opacity: 0.9;
+  left: 23%;
+  border-radius: 10px;
+  padding: 0px;
+}
+.img{
+  height:2%;
+  width: 2%;
+ 
+ 
+}
+
+.input-form{
+  width: 65%;
+  height: 100%;
+  float: left;
+  background-color:none;
+  border-radius: 10px 0 0 10px;
+  margin-bottom: 0px;
+  }
+
+.right-side {
+  width: 35%;
+  height: 100%;
+  background-color: #3AABA9;
+  float: left;
+  border-radius: 0 10px 10px 0;
+}
+
+
+.input-form .heading{
+  top:4%;
+  position: relative;
+  left: 24%;
+  color: #3AABA9;
+  font-size: 26px;
+  margin-bottom: 0px;
+ }
+
+ input{
+  width: 40%;
+  height: 8%;
+  position: absolute;
+  background: #F4F8F7; 
+  border: none;
+  padding-left: 1%;
+ }
+
+ form .fa {
+  
+  // font-family:  FontAwesome;
+  font-size: 113%;
+  font-family: Roboto, FontAwesome,sans-serif;
+}
+
+ input[type=text]{
+  top: 47%;
+  left: 13%;
+ }
+
+ input[type=password]{
+  top: 58%;
+  left: 13%;
+ }
+
+ button{
+  position: absolute;
+  top: 71%;
+  left: 22%;
+  width: 21%;
+  height: 7%;
+  border-radius: 34px;
+  border: none;
+  background-color: #3AABA9;
+ }
+ .login-button:active {
+  background-color:  rgb(51, 131, 129);
+  
+  transform: translate-Y (4px);
+}
+
+ .logintxt{
+  color: #F4F8F7;
+  font-size : 18px;
+ }
+
+ .copyright{
+   position: absolute;
+   top: 87%;
+   left: 25%;
+ }
+
+ .right-side .head{
+  color: #F4F8F7;
+  position: absolute;
+  top: 31%;
+  left: 70%;
+  margin: 0px;
+ }
+
+ .right-side .quotes{
+  color: #F4F8F7;
+  font-family: cursive;
+  align-items: center;
+  position: relative;
+  top: 41%;
+  text-align: center;
+  margin: 0px;
+ }
+
+ .social-icon{
+  
+  position: relative;
+  text-align: center;
+  top: 11%;
+  height: 6.8%;
+  left: 29%;
+  width: 37%;
+}
+  
+
+
+.social-text{
+  position: relative;
+  top: 11%;
+  text-align: center;
+  color: #D0CACA;
+  z-index: -1;
+}
+
+ .fa-facebook,.fa-twitter,.fa-linkedin{
+  width: 19.9%;
+  height: 80%;
+  vertical-align: middle;
+  font-size: 21px;
+  padding-top: 7px;
+  text-align: center;
+  color: black;
+  background-color: #F4F8F7;
+  border: 1px solid #D0CACA;
+  border-radius: 96px;
+  margin-left: 3px;
+ }
+ .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+   height: 24px;
+  background: #3AABA9;
+   color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  z-index:99999999;
+  top:115%;
+  opacity: 0;
+
+} 
+
+
+.tooltiptext::before{
+ 
+  content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #3AABA9;
+    top: -5px;
+    transform: 45deg;
+    transform: rotate(45deg);
+    left: 11px;
+    z-index: 9999999;
+}
+
+
+ .fa-facebook:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  left: 40px;
+}
+
+
+.fa-twitter:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  left: 80px;
+}
+
+.fa-linkedin:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  left: 120px;
+}
