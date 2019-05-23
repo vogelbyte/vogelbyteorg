@@ -1,66 +1,95 @@
-<table class="medicine-table">
-  
-  <h1>Medicine Table</h1>
- 
- <div class="upper-field">
- 
-  <tr>
-     <td>Name</td>
-     <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
-     <td>Comapny</td>
-     <td><input class="input" type="default" name="Date" size="10"></td>
-     <td> Location</td>
-     <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-  </tr>
-  <tr>
-     <td> Packing</td>
-     <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-     <td>Unit</td>
-     <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
-     <td>Mfg. By</td>
-     <td><input class="input" type="default" name="Date" size="10"></td>
-  </tr>
-   <tr>
-      <td>Box Qty.</td>
-      <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
-      <td>Case Qty.</td>
-     <td><input class="input" type="default" name="Date" size="10"></td>
-     <td>Status</td>
-     <td><input class="input" type="default" name="Date" size="10"></td>
-   </tr>
-  </div>
-     <div class="sale">
-      <p>Sale Rate</p>
-      <tr> 
-     <td> Sale Rate</td>
-     <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-     <td> M.R.P</td>
-      <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-      <td> W.S Rate</td>
-     <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-   </tr>     
-   <tr> 
-     <td> Spl.Rate</td>
-    <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-    <td> Min.GP</td>
-    <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td></tr>
-  </div>
-  <div class="purchase">
-      <p>Purchase Detail</p>
-      <tr> 
-     <td> Pur Rate</td>
-     <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-     <td> Excise</td>
-      <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-      <td>Scheme</td>
-     <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-   </tr>     
-   <tr> 
-     <td>NR</td>
-    <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-  </div>
- 
-  <div class="other-detail">
-      <p>other Detail</p>
-      <tr> 
-     <td>Expire</td>
+<table class="medicine-table" cellspacing="10">
+
+  <!-- /////////////////left-div//////////////// -->
+    <div class="unit-field">
+      <h1>Unit</h1>
+           <tr>
+             <td>Total Unit&nbsp; :</td>
+             <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+            </tr>
+            <tr>
+                <td>Pack Unit&nbsp; :</td>
+                <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                </tr>
+            <tr>
+                <td>Loose Unit&nbsp; :</td>
+                <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+            </tr>
+            <tr>
+               <td>Unit in pack&nbsp; :</td>
+               <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+            </tr>
+            
+            <h2>category</h2>
+                     <tr>
+                       <td>category&nbsp; :</td>
+                       <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                      </tr>
+                      <tr>
+                          <td>Min.Qty&nbsp; :</td>
+                          <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                          </tr>
+                      <tr>
+                          <td>Max.Qty&nbsp; :</td>
+                          <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                      </tr>
+                      <tr>
+                         <td>Code&nbsp; :</td>
+                         <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                      </tr>
+                
+           
+    </div>
+   
+   <!-- /////////////////right-div//////////////// --> 
+  <div class="name-field">
+      <h1>Medicine Table</h1>
+     
+      <tr class="name-row">
+          <td>Name&nbsp;:</td>
+          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+          <td>Comapny&nbsp;&nbsp;:</td>
+          <td><input class="input" type="default" name="Date" size="10"></td>
+          <td> location&nbsp;&nbsp;:</td>
+          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+          <td> Batch&nbsp;&nbsp;:</td>
+          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+       </tr>
+       <tr class="name-row">
+          <td>Exp&nbsp; :</td>
+          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+          <td>Mfg&nbsp; :</td>
+          <td><input class="input" type="default" name="Date" size="10"></td>
+          <td>Sch&nbsp; :</td>
+          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+          <td>Gst% &nbsp; :</td>
+          <td><input class="input" type="default" name="Date" size="10"></td>
+       </tr>
+      
+       <tr class="name-row">
+          <td>MRP&nbsp; :</td>
+          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+          <td>PTR &nbsp; :</td>
+          <td><input class="input" type="default" name="Date" size="10"></td>
+          <td> Purchase &nbsp; :</td>
+          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+          <td> salt &nbsp; :</td>
+          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>        
+       </tr>   
+       <p>Other Details</p>
+         <tr class="name-row">
+             <td>Barcode &nbsp;:</td>
+             <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+             <td>Defective &nbsp; :</td>
+             <td><input class="input" type="default" name="Date" size="10"></td>
+             <td> Inclusive &nbsp; :</td>
+             <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+          </tr>  
+         
+    </div>
+
+    <button mat-raised-button class="cancle_button" color="primary">cancle</button>
+    <button mat-raised-button class="submit_button" color="primary">submit</button> 
+       
+      
+</table>

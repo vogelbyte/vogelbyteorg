@@ -1,0 +1,59 @@
+.medicine-table{
+    border: 1px solid black;
+    width: 85%;
+    text-align:center;
+    top: 170px;
+    position: absolute;
+    background-color: white;
+    left: 0px;
+}
+h1{
+    // border-bottom:2px solid; 
+    // border-image-source: linear-gradient(45deg, #1129e6, #c9c1e0);
+    // border-image-slice: 1;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    background-color: #6D7AE0;
+    margin-top: -2px;
+    height: 27px;
+    margin-left: -2px;
+    width: 100.5%;
+}
+P{  
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    // border-top: 2px solid;
+    background-color: #6D7AE0;
+    color: white;
+    width: 100.5%;
+    margin-left: -2px;
+}
+
+.input{
+    background: white;
+    border: 1px solid #c3c1c1;
+    border-radius: 4px;
+    text-align: center;
+}
+.sale{
+    text-align: center;
+}
+.button-1{
+    background-color: #6D7AE0;
+    float: right;
+    border-radius: 7px;
+    width: 11%;
+    height: 25px;
+    margin-top: -11px;
+}
+.button-2{
+    background-color: #6D7AE0;
+    float: right;
+    border-radius: 7px;
+    width: 11%;
+    height: 25px;
+    margin-top: -11px;
+}

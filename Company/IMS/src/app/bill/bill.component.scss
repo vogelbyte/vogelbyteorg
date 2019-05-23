@@ -91,6 +91,7 @@ th{
 .medicine-row{
     border:none;
     height: 17px;
+    text-align: center;
 }
 
 // .medicine-table tr:nth-child(even){background-color: #d62424;}
@@ -103,7 +104,7 @@ th{
     position: absolute;
     top: 349px;
     left: 320px;
-    overflow-y: auto;
+    // overflow-y: auto;
     
     // display: none;
 }
@@ -112,7 +113,7 @@ th{
 .lower-field{
     height: 108px;
     border-top: 2px solid #e2dede;
-    padding-top: 9px;
+    padding-top: 0px;
     width: 100%;
 }
 .left{
@@ -224,7 +225,7 @@ th{
     padding-top: 6px; 
     color: #ffffff;
    }
-/////////////////////////expension-test///////////////
+/////////////////////////expension-test/////////////
 .mat-panel-6{
     background-color: #74d0f3;
 }
@@ -236,9 +237,10 @@ th{
     color: #ffffff;
 
    }   
-////////////////////////////////////////////////////////////////
+///////////////////////////////////expansion-panel-border-css/////////////////////////////
 .mat-accordion .mat-expansion-panel:last-of-type {
     border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 .mat-expansion-panel-content > .mat-expansion-panel-body {
     
@@ -249,4 +251,34 @@ th{
     background: none;
     border: 1px solid #636161;
     border-radius: 2px;
+}
+
+// .mat-dialog-container {
+// transform: none;
+// position: absolute;
+// width: 27%;
+// height: 20%;
+// top: 50%;
+// left: 20%;
+// background-color: #6D7AE0;
+// }
+//////////////////////////submit-bill///////////////// 
+.submit-bill{
+    position: absolute;
+    left: 74%;
+    top: 91%;
+    // background-color: #4454d2;
+    width: 10%;
+    height: 5%;
+    background-color: #d7d8e2;
+    border-radius: 15px;
+    // left: 813px;
+    // top: 10px;
+   
+    // width: 100px;
+    // height: 33px;
+    // position: relative;
+  
+   
+
 }
