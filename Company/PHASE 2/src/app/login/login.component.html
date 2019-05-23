@@ -1,0 +1,41 @@
+    <div class="main">
+    <mat-card class="header">    
+          
+       <!-- form div -->
+      <mat-card-content class="input-form" >
+            <span class="logo" ><img src="assets/images/logo.png" height="35px" width="90px"> </span>  
+                  <h2 class="heading">Sign in to XYZ Limited</h2>
+                  
+                  <div class="social-icon">
+                        <i class="fa fa-facebook"><span class="tooltiptext">Coming Soon..</span></i>
+                        <i class="fa fa-twitter"><span class="tooltiptext">Coming Soon..</span></i>
+                        <i class="fa fa-linkedin"><span class="tooltiptext">Coming Soon..</span></i>
+                        
+                  </div>
+                  
+                   <p class="social-text">or use your email account</p>
+                    
+        <form  (ngSubmit)="onSubmit()" #form="ngForm"> 
+                  
+            
+                 
+                        
+            <input class="fa" placeholder="&#xf2be; Username" [(ngModel)]="userModel.email"  type="text" name="username" required>
+          
+            <input class="fa" placeholder="&#xf023; Password" [(ngModel)]="userModel.password" type="password" name="password" required>                       
+         
+            <button mat-raised-button  class="logintxt" >login</button>
+      </form>     
+      <p class="copyright">© VogelByte 2019</p>
+      </mat-card-content>
+    
+      <!-- right div -->
+                   <div class="right-side">
+                              <h1 class="head">Hello, Friend!</h1>
+                              <p class="quotes">
+                                     “Declare the past, diagnose the present, foretell the future.”
+                              </p>
+                   </div>
+      </mat-card>
+   
+</div>
