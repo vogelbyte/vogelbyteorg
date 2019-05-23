@@ -178,7 +178,7 @@
          </TR>
       </div>
  <!-- /////////////////////medicine-data-table//////////////////-->
-        <div class="medicine-table">       
+        <!-- <div class="medicine-table">       
                     <tr>
                       <th>Code</th>
                       <th>medicine</th> 
@@ -191,8 +191,8 @@
                       <th>Inc Rate</th>
                       <th>Amount</th>
                     </tr>
-                    <tr *ngFor="let row of rows">
-                      <td ><input class="medicine-row" type="text" name="code" size="8%" [matAutocomplete]="auto" [(ngModel)]="data.company_id">
+                    <tr *ngFor="let row of rows;let i:index" (click)="onSelect(row) ">
+                      <td ><input class="medicine-row" type="text" name="code" size="8%" [matAutocomplete]="auto" [(ngModel)]="data.company_id" >
                         <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
                           <mat-option  *ngFor="let option of medicineDetail" [value]="option"  (click)="rowSelect(option)" (mouseenter)="rowHover(option)"(click)="addFieldValue()">
                             {{option.med_name}}{{option.quantity}}{{option.type}}
@@ -230,7 +230,70 @@
                     </tr>
                     
                  
-        </div>           
+        </div>            -->
+        <div class="medicine-table">
+        <div class="card">
+            <div class="card-body">
+              <div id="table" class="table-editable">
+               
+                <table  class="table table-bordered table-responsive-md table-striped text-center">
+                  <tr>
+                   
+                    <th class="text-center">Code</th>
+                      <th class="text-center">medicine</th> 
+                      <th class="text-center">Batch</th>
+                      <th class="text-center">Exp.</th>
+                      <th class="text-center">Qty.</th> 
+                      <th class="text-center">GST%</th>
+                      <th class="text-center">Sale Rs</th>
+                      <th class="text-center">Dis%</th> 
+                      <th class="text-center">Inc Rate</th>
+                      <th class="text-center">Amount</th>
+                  </tr>
+                  <tr *ngFor="let row of rows; let id = index" (click)="highlightRow(id)">
+                    <td >
+                       <span >
+                          <input class="medicine-row" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}">
+                          <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
+                            <mat-option  *ngFor="let option of medicineDetail" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
+                                {{option.med_name}}{{option.quantity}}{{option.type}}
+                            </mat-option>
+                          </mat-autocomplete>
+                        </span>
+                    </td>
+                    <td>
+                      <span><input class="medicine-row" size="8%" type="text" value="{{row.med_name}}"></span>
+                    </td>
+                    <td>
+                      <span><input class="medicine-row" size="8%" type="text" value="{{row.batch_no}}"></span>
+                    </td>
+                    <td>
+                      <span><input class="medicine-row" size="8%" type="text" value="{{row.exp}}"></span>
+                    </td>
+                    <td>
+                      <span><input class="medicine-row" size="8%" type="text" value="{{row.quantity}}"></span>
+                    </td>
+                    <td>
+                        <span><input class="medicine-row" size="8%" type="text" value="{{row.gst}}"></span>
+                    </td>
+                    <td>
+                        <span><input class="medicine-row" size="8%" type="text" value="{{row.net_rate}}"></span>
+                    </td>
+                    <td>
+                        <span><input class="medicine-row" size="8%" type="text" value="{{row.dis}}"></span>
+                    </td>  
+                    <td>
+                        <span><input class="medicine-row" size="8%" type="text" value="{{row.inc_rate}}"></span>
+                    </td>
+                    <td>
+                        <span><input class="medicine-row" size="8%" type="text" value="{{row.amount}}"></span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- ////////////////////  demo/////////////////////////////////// -->
         <!-- <ng-container *ngIf="show">
         <div class="poptable">

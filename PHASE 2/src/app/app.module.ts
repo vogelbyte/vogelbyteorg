@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { CustomMaterialModule } from './material.module';
-import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -13,6 +12,8 @@ import { BillComponent } from './bill/bill.component';
 import { NotesComponent } from './notes/notes.component';
 import { ResizableModule } from 'angular-resizable-element';
 import { TicketsComponent } from './tickets/tickets.component';
+import { MedicineComponent } from './medicine/medicine.component';
+import {AppRoutingModule, routingComponent } from './routing module/app-routing.module';
 
 
 @NgModule({
@@ -24,20 +25,23 @@ import { TicketsComponent } from './tickets/tickets.component';
     BillComponent,
     NotesComponent,
     TicketsComponent,
-    TicketsComponent
+    TicketsComponent,
+    MedicineComponent,
+    routingComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     CustomMaterialModule,
     FormsModule,
-    AppRoutingModule,
     HttpClientModule,
     ResizableModule,
-   
+    AppRoutingModule,
+    
     
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

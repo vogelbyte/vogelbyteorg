@@ -9,49 +9,53 @@ import { CustmerService } from '../custmer.service';
   styleUrls: ['./bill.component.scss']
 })
 export class BillComponent implements OnInit {
-  
+  public selectedName;
+  public selectedrow=[];
   public data="";
   public rowhover="";
   public custmerdata="";
-  public rows=[
-    {},
-    {}
-    
-  ];
-  
+  private newAttribute: any = {};
   public medicineDetail=[];
   public custmer=[];
+
+  public rows: Array<any> = 
+    [
+    {company_id:' ', med_name:' ', batch_no:' ', exp:' ', quantity:' ', gst:' ', net_rate:' ', dis:' ', inc_rate:' ', amount:' '}
+    ];
+  
+    rowHover(medicine:any)
+        {
+          this.rowhover=medicine;
+        }
+    custmerRowSelect(custmer:any)
+        {
+          this.custmerdata=custmer;
+        }
+     rowSelect(medicine:any)
+         {
+          this.selectedrow=medicine;
+          console.log(this.selectedrow);
+          this.rows[this.selectedName]=this.selectedrow;
+         }
+    public highlightRow(emp) 
+         {
+          this.selectedName = emp;
+          console.log( this.selectedName);
+         } 
+     addFieldValue() 
+        {
+          this.rows.push(this.newAttribute)
+          this.newAttribute = {};
+        }
+ 
   
   constructor(private medicineDetailService:MedicineDetailService,
-    private custmerService:CustmerService
-    ) { }
+              private custmerService:CustmerService
+              ) { }
   show=false;
   
-  rowSelect(medicine:any){
-     
-    this.data=medicine;
-   }
-   rowHover(medicine:any)
-   {
-    this.rowhover=medicine;
-   }
-   custmerRowSelect(custmer:any)
-   {
-    this.custmerdata=custmer;
-   }
-
-   private fieldArray: Array<any> = [];
-   private newAttribute: any = {};
-   addFieldValue() 
-   {
-     this.fieldArray.push(this.newAttribute)
-     this.newAttribute = {};
-    }
-   displayFn(subject){
-     return subject ?subject.company_id:undefined;
-   }
-
   
+     
   ngOnInit() {
     this.medicineDetailService.getMedicineDetail()
       .subscribe(data=> this.medicineDetail=data);

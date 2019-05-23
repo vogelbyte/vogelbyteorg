@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MedicineDetailService {
-  // private _url:string="/assets/data/medicine.json";
-  _url='http://localhost:8080/vogelbyte/medicinedetail';
+  private _url:string="/assets/data/medicine.json";
+ //_url='http://localhost:8080/vogelbyte/medicinedetail';
   constructor(private http: HttpClient) { }
   // getMedicineDetail():Observable<MedicineDetail[]>{
   //   return this.http.get<MedicineDetail[]>(this._url);
