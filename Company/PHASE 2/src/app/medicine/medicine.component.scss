@@ -3,7 +3,7 @@
 // 3. right div
 ////////// parent tabel/////////////////////
 .medicine-table{
-   height: 511px;
+   height: 590px;
    width: 100%;
    border-spacing: 0px;
    font-family: Roboto,"Helvetica Neue",sans-serif;
@@ -39,6 +39,7 @@ h2{
  //border-right: 2px solid  #e2dede;;
  text-align: left;
  margin-left:5px;
+ margin-top: 5px;
 }
 /////////////////////right-div//////////////
 h1{ 
@@ -66,6 +67,7 @@ p{
    height: 35%;
    background-color:white;
  margin-left: 5px;
+ margin-top: 5px;
 }
 
   
@@ -97,7 +99,7 @@ p{
    height: 38%;
    background-color: rgb(255, 255, 255); 
     margin-left: 5px;
-    margin-top: 20px;
+   // margin-top: 1px;
 
 }
 .example-section {

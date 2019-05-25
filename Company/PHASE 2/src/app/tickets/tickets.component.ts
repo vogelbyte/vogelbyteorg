@@ -10,26 +10,26 @@ import { Routes, RouterModule, Router } from '@angular/router';
 })
 export class TicketsComponent implements OnInit {
 
-  colors = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0'];
-  getRandomColor() {
-    // var color = Math.floor(0x1000000 * Math.random()).toString(16);
-    // return '#' + ('000000' + color).slice(-6);
-   return '#' + this.colors[Math.floor(Math.random() * this.colors.length)];
-    }
- 
-// for(var i = 0; i < cells.length; i++) {
-//     cells[i].style.backgroundColor = '#' + colors[Math.floor(Math.random() * colors.length)];
-// }
+  colors = ['FBC531','4CD137','33B5E5','4CD137','FF4340','FBC531','33B5E5','4CD137'];
+  
+    
+getColor(cells){  
+ var col= this.colors[Math.floor(Math.random() * this.colors.length)];
+  //console.log(cells);
+  return '#' + this.colors[cells];
+}
 
   enum_details = [
-    {name: 'medicine',"path":"/medicine"},
-    {name: 'Billpayment',"path":"/billpayment"},
-    {name: 'generate',"path":"/test3"},
-    {name: 'rohit',"path":"/test4"},
-    {name: 'kapil',"path":"/test5"},
-    {name: 'kapil',"path":"/test6"},
+    {name: 'medicine',"path":"/medicine",icon:'payment'},
+    {name: 'Billpayment',"path":"/billpayment",icon:'assessment'},
+    {name: 'static',"path":"/test3" ,icon:'book'},
+    {name: 'Profit',"path":"/test4" ,icon:'trending_up'},
+    {name: 'Chart',"path":"/test5" ,icon:'trending_down'},
+    {name: 'Client',"path":"/test6" ,icon:'face'},
+    {name: 'Location',"path":"/test6",icon:'verified_user'},
+    {name: 'Map',"path":"/test6" ,icon:'touch_app'},
     ] 
-
+    
   constructor(
     private router: Router
   ) {

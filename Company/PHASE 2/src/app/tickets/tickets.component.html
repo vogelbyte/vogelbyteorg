@@ -1,9 +1,11 @@
 
 <div class="ticketdiv">
     
-  <button mat-raised-button *ngFor="let enum of enum_details, let i = index" (click)="resendEmail(i)" class="mat-raised-button" [ngStyle]="{'background-color': getRandomColor()}">
+  <button mat-raised-button *ngFor="let enum of enum_details, let i = index" (click)="resendEmail(i)" class="mat-raised-button"  [ngStyle]="{'background-color': getColor(i)}">
   {{enum.name}}
+  <mat-icon >{{enum.icon}}</mat-icon>
  </button>
   
   </div>
   
+  <!-- [ngStyle]="{'background-color': getRandomColor()}" -->

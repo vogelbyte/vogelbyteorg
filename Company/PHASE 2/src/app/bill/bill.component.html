@@ -83,39 +83,7 @@
             </mat-expansion-panel>
 
         
-            <mat-expansion-panel class="mat-panel-3">
-                <mat-expansion-panel-header  class="header-content-3"
-                 [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-                 <mat-panel-title><mat-icon>how_to_vote</mat-icon>&nbsp;
-                 Salt
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <form class="form-content">
-                  Salt&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input  class="expension-input" type="unit" name="Total Unit" size="7">
-                Salt&nbsp;&nbsp;&nbsp;&nbsp; 
-                 <input class="expension-input" type="unit" name="Pack Unit" size="7">
-                 Salt&nbsp;&nbsp;
-                 <input class="expension-input" type="unit" name="loose Unit" size="7"> 
-               </form>
-          </mat-expansion-panel>
 
-        <mat-expansion-panel class="mat-panel-4">
-                    <mat-expansion-panel-header  class="header-content-4"
-                     [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-                     <mat-panel-title> <mat-icon>payment</mat-icon>&nbsp;
-                     Demo
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <form class="form-content">
-                      Demo&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input  class="expension-input" type="unit" name="Total Unit" size="7">
-                      Demot&nbsp;&nbsp;&nbsp;&nbsp; 
-                     <input class="expension-input" type="unit" name="Pack Unit" size="7">
-                     Demo&nbsp;&nbsp;&nbsp;&nbsp;
-                     <input class="expension-input" type="unit" name="loose Unit" size="7"> 
-                   </form>
-              </mat-expansion-panel>
      </mat-accordion>       
 
 
@@ -265,9 +233,9 @@
                   <tr *ngFor="let row of rows; let id = index" (click)="highlightRow(id)">
                     <td >
                        <span >
-                          <input class="medicine-row" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}">
+                          <input class="medicine-row" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" [formControl]="myControl">
                           <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
-                            <mat-option  *ngFor="let option of medicineDetail" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
+                            <mat-option  *ngFor="let option of filteredOptions | async" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
                                 {{option.med_name}}{{option.quantity}}{{option.type}}
                             </mat-option>
                           </mat-autocomplete>
