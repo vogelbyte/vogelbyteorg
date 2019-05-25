@@ -2,6 +2,8 @@
 
   <!-- /////////////////left-div//////////////// -->
     <div class="unit-field">
+        <mat-card>
+            <mat-card-content>
       <h1>Unit</h1>
            <tr>
              <td>Total Unit&nbsp; :</td>
@@ -37,12 +39,15 @@
                          <td>Code&nbsp; :</td>
                          <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
                       </tr>
-                
-           
+                    </mat-card-content>
+                  </mat-card>
+                          
     </div>
    
    <!-- /////////////////right-div//////////////// --> 
   <div class="name-field">
+      <mat-card>
+          <mat-card-content>
       <h1>Medicine Table</h1>
      
       <tr class="name-row">
@@ -76,18 +81,56 @@
           <td> salt &nbsp; :</td>
           <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>        
        </tr>   
-       <p>Other Details</p>
-         <tr class="name-row">
+       <!-- <p>Other Details</p> -->
+         <!-- <tr class="name-row">
              <td>Barcode &nbsp;:</td>
              <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+             
              <td>Defective &nbsp; :</td>
              <td><input class="input" type="default" name="Date" size="10"></td>
              <td> Inclusive &nbsp; :</td>
              <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
-          </tr>  
-         
+             
+          </tr>   -->
+          
+          </mat-card-content>
+          </mat-card>
     </div>
+    
+    <div class="other_detail">
+       
+        <mat-card>
+            <mat-card-content>
+                <h3 class="example-h2">Other Dertail</h3>
 
+              <section class="example-section">
+                <mat-checkbox class="example-margin" [(ngModel)]="defective">Any Defective</mat-checkbox>
+                <mat-form-field class="example-margin" *ngIf="defective && !autoTicks">
+                <input matInput type="number"  [(ngModel)]="tickInterval" style="text-align: center">
+                </mat-form-field>
+              </section>
+              <section class="example-section">
+                  <mat-slide-toggle>Bar code</mat-slide-toggle>
+              </section>
+              <section class="example-section">
+                  <mat-checkbox class="example-margin" [(ngModel)]="inclusive">Inclusive</mat-checkbox>
+                  <mat-form-field class="example-margin" *ngIf="inclusive && !autoTicks">
+                  <input matInput type="number"  [(ngModel)]="tickInterval" style="text-align: center">
+                  </mat-form-field>
+                </section>
+            </mat-card-content>
+        </mat-card>
+
+
+</div>
+    
+    
+       
+    
+       
+     
+    
+   
     <button mat-raised-button class="cancle_button" color="primary">cancle</button>
     <button mat-raised-button class="submit_button" color="primary">submit</button> 
        

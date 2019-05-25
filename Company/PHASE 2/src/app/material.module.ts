@@ -1,6 +1,9 @@
 import {NgModule} from "@angular/core";
 import { CommonModule } from '@angular/common';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 import {
          MatButtonModule, MatCardModule, MatDialogModule, MatInputModule, 
@@ -24,7 +27,10 @@ const MaterialComponents =[CommonModule,
   MatGridListModule,
   MatListModule,
   MatExpansionModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  MatSliderModule,
+  MatCheckboxModule,
+  MatSlideToggleModule
                   ];
 @NgModule({
   imports: [MaterialComponents],

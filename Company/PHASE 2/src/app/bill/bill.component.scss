@@ -173,10 +173,12 @@ th{
    }
 
 .form-content{
-    margin-top: 28px;
+    margin-top: 3px;
     font-weight: 450;
     font-size: 12px;
-   
+   text-align: left;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-variant: petite-caps;
 }
 
 ////////////////////////expension-sale//////////////
@@ -253,3 +255,17 @@ th{
     border: 1px solid #636161;
     border-radius: 2px;
 }
+.submit_button {
+    background-color:  #6D7AE0;
+    position: relative;
+    top:0px;
+    left:450px;
+    width:100px;
+  }
+  .cancle_button{
+     background-color:  rgb(255, 92, 28);
+     position: relative;
+    // top:10px;
+     left:300px;
+     width:100px;
+  }

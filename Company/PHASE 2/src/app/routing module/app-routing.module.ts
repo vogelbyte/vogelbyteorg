@@ -5,8 +5,8 @@ import { BillComponent } from '../bill/bill.component';
 
 const routes: Routes = [
  // {path:'', redirectTo: '/departments', pathMatch: 'full' },
-  {path:'medicine', component : MedicineComponent},
-  {path : 'billpayment', component: BillComponent},
+  {path:'medicine', component : MedicineComponent, data: { animation: 'isLeft' }},
+  {path : 'billpayment', component: BillComponent, data: { animation: 'isRight' }},
  // {path:'departments/:id',component:DepartmentDetailComponent}
 ];
 

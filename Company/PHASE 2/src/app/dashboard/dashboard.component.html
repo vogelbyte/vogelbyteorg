@@ -14,9 +14,9 @@
                              <button mat-icon-button (click)="sidenav.toggle()">
                                  <mat-icon>menu</mat-icon>
                              </button>
-                               Home
+                               Home 
                          </mat-toolbar> 
-               <table cellspacing="0" class="parent-table">   
+               <table cellspacing="0" class="parent-table" >   
                     <tr>      
                          <td class="mini-nav"> 
                             <mat-toolbar class="mini-nav"></mat-toolbar>
@@ -37,10 +37,12 @@
                    </tr>              
  <!-- ///////////////////////bill-panel/////////////////////////////////////            -->
                   
-                    <tr>
-                        <td class="bill" style="background-color: blue">  
+                    <tr >
+                        <td class="bill" style="background-color: blue" [@routeAnimations]="prepareRoute(outlet)">  
                            <!-- <app-bill></app-bill>  -->
-                           <router-outlet></router-outlet>
+                           <!-- <main [@routeAnimations]="prepareRoute(outlet)" > -->
+                                <router-outlet #outlet="outlet"></router-outlet>
+                           <!-- </main> -->
                        </td>
                         
                    </tr>

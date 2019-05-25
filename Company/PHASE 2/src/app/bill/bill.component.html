@@ -1,21 +1,61 @@
 <div class="parent">
          <div class="left-child">
+           
+            <mat-expansion-panel class="mat-panel-5"[expanded]="true">
+                <mat-expansion-panel-header  class="header-content-5"
+                [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+                <mat-panel-title><mat-icon>event_note</mat-icon>&nbsp;
+                Unit
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <form class="form-content">
+                  Total Unit&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 
+                  <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7" [ngModel]="rowhover.total_unit"> -->{{rowhover.total_unit}}<br>
+                  Pack Unit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 
+                <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7" [ngModel]="rowhover.pack_unit"> -->{{rowhover.pack_unit}}<br>
+                Loose Unit&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- <input class="expension-input" type="unit" name="loose Unit" size="7" [ngModel]="rowhover.loose_unit"> -->{{rowhover.loose_unit}}<br>
+                Unit In Pack&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- <input class="expension-input" type="unit" name="loose Unit" size="7" [ngModel]="rowhover.unit_in_pack">  -->{{rowhover.unit_in_pack}}<br>
+                Defective&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.defective}}
+              </form>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel class="mat-panel-6"[expanded]="true">
+              <mat-expansion-panel-header  class="header-content-6"
+              [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+              <mat-panel-title><mat-icon>wc</mat-icon>&nbsp;
+              Date & price
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <form class="form-content">
+                MRP&nbsp;&nbsp;&nbsp;&nbsp;: {{rowhover.mrp}}<br>
+                <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"> -->
+                P.T.R&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.ptr}}<br>
+              <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"> -->
+              Purchase&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.purchase_rate}}<br>
+              <!-- <input class="expension-input" type="unit" name="loose Unit" size="7">  -->
+              Gst&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.gst}}<br>
+              Exp Date&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.exp_date}}<br>
+              Mfg Date&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.mfg_date}}<br>
+            </form>
+        </mat-expansion-panel>
             <mat-accordion multi="false">
                 <mat-expansion-panel class="mat-panel-1"[expanded]="true">
                     <mat-expansion-panel-header  class="header-content-1"
                      [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
                      <mat-panel-title>
                        <mat-icon>assessment</mat-icon>&nbsp;
-                     unit
+                     Medicine Detail
                     </mat-panel-title>
                   </mat-expansion-panel-header>
                   <form class="form-content">
-                      Total Unit&nbsp;&nbsp;&nbsp;&nbsp;
-                      <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit">
-                    Pack Unit&nbsp;&nbsp;&nbsp;&nbsp; 
-                     <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit">
-                     Loose Unit&nbsp;&nbsp;
-                     <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit"> 
+                      Batch&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.batch_no}}<br>
+                      <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit"> -->
+                    Company&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.company}}<br>
+                     <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit"> -->
+                     Salt&nbsp;&nbsp;:{{rowhover.salt}}<br>
+                     <!-- <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit">  -->
                    </form>
               </mat-expansion-panel>
 
@@ -24,17 +64,22 @@
                    [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
                    <mat-panel-title>
                       <mat-icon>payment</mat-icon>&nbsp;
-                   Sale detail
+                   Other Detail
                   </mat-panel-title>
                 </mat-expansion-panel-header>
                 <form class="form-content">
-                    Total Unit&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit">
-                  Pack Unit&nbsp;&nbsp;&nbsp;&nbsp; 
-                   <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit">
-                   Loose Unit&nbsp;&nbsp;
-                   <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit"> 
-                 </form>
+                    Category&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.category}}<br>
+                    <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit"> -->
+                  Min Qty&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.min_quantity}}<br>
+                   <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit"> -->
+                  Max Qty&nbsp;&nbsp;:{{rowhover.max_quantity}}<br>
+                   <!-- <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit">  -->
+                  Code&nbsp;&nbsp;:{{rowhover.code}}<br>
+                  Location&nbsp;&nbsp;:{{rowhover.location}}<br>
+                  Scheme&nbsp;&nbsp;:{{rowhover.scheme}}<br>
+                  Barcode&nbsp;&nbsp;:{{rowhover.barcode}}<br>
+                  Inclusive&nbsp;&nbsp;:{{rowhover.inclusive}}<br>
+                  </form>
             </mat-expansion-panel>
 
         
@@ -74,39 +119,6 @@
      </mat-accordion>       
 
 
-              <mat-expansion-panel class="mat-panel-5"[expanded]="true">
-                  <mat-expansion-panel-header  class="header-content-5"
-                  [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-                  <mat-panel-title><mat-icon>event_note</mat-icon>&nbsp;
-                  Purchase detail
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <form class="form-content">
-                    PUR Unit&nbsp;&nbsp;&nbsp;&nbsp;
-                    <input  class="expension-input" type="unit" name="Total Unit" size="7">
-                    PUR Unit&nbsp;&nbsp;&nbsp;&nbsp; 
-                  <input class="expension-input" type="unit" name="Pack Unit" size="7">
-                  PUR Unit&nbsp;&nbsp;
-                  <input class="expension-input" type="unit" name="loose Unit" size="7"> 
-                </form>
-            </mat-expansion-panel>
-
-            <mat-expansion-panel class="mat-panel-6"[expanded]="true">
-                <mat-expansion-panel-header  class="header-content-6"
-                [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-                <mat-panel-title><mat-icon>wc</mat-icon>&nbsp;
-                test
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <form class="form-content">
-                  PUR Unit&nbsp;&nbsp;&nbsp;&nbsp;
-                  <input  class="expension-input" type="unit" name="Total Unit" size="7">
-                  PUR Unit&nbsp;&nbsp;&nbsp;&nbsp; 
-                <input class="expension-input" type="unit" name="Pack Unit" size="7">
-                PUR Unit&nbsp;&nbsp;
-                <input class="expension-input" type="unit" name="loose Unit" size="7"> 
-              </form>
-          </mat-expansion-panel>
 
       </div>
         
@@ -310,8 +322,13 @@
                            <td class="right2"> Net Amount:</td>
                         <td><input  class="input" type="Invoice no" name="Invoice no" size="10"></td>
                       </TR>
+                      <button mat-raised-button class="cancle_button" color="primary">cancle</button>
+                      <button mat-raised-button class="submit_button" color="primary">submit</button> 
+     
                   </div>
+                  
     </table>
+    
 </div>
 <!-- <app-popuptable (selectedUser)="data=$event"></app-popuptable> -->
 </div>
