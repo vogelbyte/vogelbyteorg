@@ -1,0 +1,119 @@
+/// 1.parent div
+/// 2.child div
+/// 3.upper-field-table-css
+/// 4.medicine-data-table
+/// 5.left-expension-panel
+
+
+////////////////////////////child-div//////////////////////////////
+.right-child{
+    height: 95%;
+    width: 81%;
+    float: left;
+    padding-bottom:3%;
+    background-color: white;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+
+
+//////////////////////////////////////medicine-table///////////////////////////////
+/////////////////upper-field-table-css///////////////
+.input{
+    background: white;
+    border: 1px solid #c3c1c1;
+    border-radius: 4px;
+   
+}
+.left-field{
+    float: left; 
+    margin-left: 12px;
+    margin-top: -9px;
+}
+.center-field{
+    float: left;
+    margin-left: 21px;
+    margin-top: -9px;
+}
+.right-field{
+    float: left;
+    margin-left: 21px;
+    margin-top: -9px;
+}
+h1{
+   
+    border-bottom:2px solid; 
+    border-image-source: linear-gradient(45deg, #6D7AE0, #ffffff);
+    border-image-slice: 1;
+    text-align: left;
+    
+    font-size: 17px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+.heading-row{
+
+    height: 10px;
+}
+
+/////////////////////medicine-data-table/////////////
+
+.medicine-table{
+    border-collapse: collapse;
+     width: 100%;
+     height: 340px;
+}
+th{
+    background-color: #4454d2;  
+    width: 91px;
+    height: 28px; 
+    color: white;
+    font-weight: normal;
+}
+.medicine-table td{
+     border-bottom: 1px solid #f1eaea;
+    background-color:white;
+    width: 19px;
+    height: 23px;
+  }
+.medicine-row{
+    border:1px solid;
+    height: 17px;
+}
+
+// .medicine-table tr:nth-child(even){background-color: #d62424;}
+// .medicine-table tr:hover {background-color: rgb(218, 60, 60);}
+///////////////////////////poptable///////////////////////////////
+.poptable{
+    height: 100px;
+    width: 406px;
+   border-color: #6D7AE0;
+    position: absolute;
+    top: 349px;
+    left: 320px;
+    overflow-y: auto;
+    
+    // display: none;
+}
+
+///////////////////////////footer-field-css///////////////////
+.lower-field{
+    height: 108px;
+    border-top: 2px solid #e2dede;
+    padding-top: 9px;
+    width: 100%;
+}
+.left{
+    color:#1e690c;
+}
+.right1{
+    float: right;
+    margin-left: 399px;
+    color:#0b08de;
+}
+.right2{
+    float: right;
+    margin-left: 19px;
+    color:#de0b29;
+}
+
+

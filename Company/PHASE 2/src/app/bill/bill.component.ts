@@ -4,7 +4,8 @@ import { CustmerService } from '../custmer.service';
 import { startWith, map } from 'rxjs/operators';
 import { FormControl } from '@angular/forms'
 import { Observable } from 'rxjs';
-
+import { ServiceService } from '../service.service';
+import { Billpayment } from '../servicefile/billpayment';
 @Component({
   selector: 'app-bill',
   templateUrl: './bill.component.html',
@@ -27,7 +28,9 @@ export class BillComponent implements OnInit {
     [
     {company_id:' ', med_name:' ', batch_no:' ', exp:' ', quantity:' ', gst:' ', net_rate:' ', dis:' ', inc_rate:' ', amount:' '}
     ];
-  
+    dataobj="";
+    billModel=  new Billpayment (this.dataobj);
+     billModelArray:Billpayment[];
     rowHover(medicine:any)
         {
           this.rowhover=medicine;
@@ -62,7 +65,8 @@ export class BillComponent implements OnInit {
           return subject ? subject.company_id :undefined;
         }
   constructor(private medicineDetailService:MedicineDetailService,
-              private custmerService:CustmerService
+              private custmerService:CustmerService,
+              private serviceService:ServiceService
               ) { }
   show=false;
   
@@ -88,5 +92,12 @@ export class BillComponent implements OnInit {
       option.med_name.toLowerCase().includes(filterValue)
      );
   }
-
+  onSubmit(data){
+   console.log("You are here===>",data); 
+    this.serviceService.send(this.billModel)
+    .subscribe(
+      data=>console.log('success!',data),
+      error =>console.log('error!',error)
+    )
+  }
 }
