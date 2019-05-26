@@ -230,12 +230,12 @@
                       <th class="text-center">Inc Rate</th>
                       <th class="text-center">Amount</th>
                   </tr>
-                  <tr *ngFor="let row of rows; let id = index" (click)="highlightRow(id)">
+                  <tr *ngFor="let row of rows; let id = index" (click)="highlightRow(id,rows)">
                     <td >
                        <span >
-                          <input class="medicine-row" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" [formControl]="myControl">
+                          <input class="medicine-row" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" [formControl]="myControl" placeholder="search">
                           <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
-                            <mat-option  *ngFor="let option of filteredOptions | async" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
+                            <mat-option  *ngFor="let option of filteredOptions | async"   (click)="rowSelect(option)" (click)="addFieldValue(id)" (mouseenter)="rowHover(option)">
                                 {{option.med_name}}{{option.quantity}}{{option.type}}
                             </mat-option>
                           </mat-autocomplete>

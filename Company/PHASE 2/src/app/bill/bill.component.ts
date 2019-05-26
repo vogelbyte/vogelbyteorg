@@ -1,8 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 import { MedicineDetailService } from '../medicine-detail.service';
 import { CustmerService } from '../custmer.service';
-import { startWith, map  } from 'rxjs/operators';
+import { startWith, map } from 'rxjs/operators';
 import { FormControl } from '@angular/forms'
 import { Observable } from 'rxjs';
 
@@ -12,7 +11,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./bill.component.scss']
 })
 export class BillComponent implements OnInit {
-  public selectedName;
+  public selectedIndex;
+  public selectedLength;
   public selectedrow=[];
   public data="";
   public rowhover="";
@@ -39,21 +39,28 @@ export class BillComponent implements OnInit {
      rowSelect(medicine:any)
          {
           this.selectedrow=medicine;
-          console.log(this.selectedrow);
-          this.rows[this.selectedName]=this.selectedrow;
+          console.log("rowSelected method" ,this.selectedrow);
+          this.rows[this.selectedIndex]=this.selectedrow;
+          
          }
-    public highlightRow(emp) 
+    public highlightRow(id,rows) 
          {
-          this.selectedName = emp;
-          console.log( this.selectedName);
+          this.selectedIndex = id;
+          this.selectedLength=rows
+          console.log( "id ", this.selectedIndex);
+          console.log( "length", this.selectedLength);
+
          } 
-     addFieldValue() 
+     addFieldValue(i) 
         {
+          if(i==this.selectedLength.length-1)
           this.rows.push(this.newAttribute)
           this.newAttribute = {};
         }
  
-  
+        displayFn(subject){
+          return subject ? subject.company_id :undefined;
+        }
   constructor(private medicineDetailService:MedicineDetailService,
               private custmerService:CustmerService
               ) { }
@@ -71,7 +78,7 @@ export class BillComponent implements OnInit {
 
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
-         map( value => this._filter(value))
+         map( value => this._filter(value.toLowerCase()))
          );
         }
     private _filter(value:string): any[] 

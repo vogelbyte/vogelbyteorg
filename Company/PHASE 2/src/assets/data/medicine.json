@@ -1,7 +1,7 @@
 [
     {
         "_id" :"5ce657e3b5aec23a300eab8d",
-        "company_id" : "NJDFD8454",
+        "company_id" : "001",
         "description" : "hello",
         "med_name" : "betnesol",
         "batch_no" : "2323",
@@ -32,7 +32,7 @@
     },
     {
         "_id" : "5ce65772b5aec23a300eab8b",
-        "company_id" : "5646",
+        "company_id" : "002",
         "description" : "hello",
         "med_name" : "becolide p",
         "batch_no" : "2323",
@@ -63,7 +63,7 @@
     },
     {
         "_id" : "5ce6569db5aec23a300eab89",
-        "company_id" : "FG45G4",
+        "company_id" : "003",
         "description" : "not",
         "med_name" : "combiflame",
         "batch_no" : "DF45D54",

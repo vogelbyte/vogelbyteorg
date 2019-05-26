@@ -253,7 +253,7 @@
                   <tr *ngFor="let row of rows; let id = index" (click)="highlightRow(id)">
                     <td >
                        <span >
-                          <input class="medicine-row" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}">
+                          <input class="medicine-row" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" >
                           <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
                             <mat-option  *ngFor="let option of medicineDetail" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
                                 {{option.med_name}}{{option.quantity}}{{option.type}}

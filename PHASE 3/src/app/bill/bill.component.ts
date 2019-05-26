@@ -2,7 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material';
 import { MedicineDetailService } from '../medicine-detail.service';
 import { CustmerService } from '../custmer.service';
-
+import { startWith, map  } from 'rxjs/operators';
+import { FormControl } from '@angular/forms'
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-bill',
   templateUrl: './bill.component.html',
@@ -17,6 +19,8 @@ export class BillComponent implements OnInit {
   private newAttribute: any = {};
   public medicineDetail=[];
   public custmer=[];
+  myControl = new FormControl();
+  filteredOptions : Observable<string[]>;
 
   public rows: Array<any> = 
     [
@@ -64,6 +68,17 @@ export class BillComponent implements OnInit {
     this.custmerService.getCustmer()
     .subscribe(data=> this.custmer=data);
 
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+         map( value => this._filter(value))
+         );
+        }
+    private _filter(value:string): any[] 
+    {
+     const filterValue = value.toLowerCase();
+     return this.medicineDetail.filter( option =>
+      option.med_name.toLowerCase().includes(filterValue)
+     );
   }
 
 }
