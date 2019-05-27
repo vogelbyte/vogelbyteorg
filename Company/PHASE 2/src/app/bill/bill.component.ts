@@ -92,8 +92,13 @@ export class BillComponent implements OnInit {
       option.med_name.toLowerCase().includes(filterValue)
      );
   }
-  onSubmit(data){
-   console.log("You are here===>",data); 
+  // onSubmit(test){
+  //  console.log("You are here===>",test); 
+  //   this.serviceService.send(this.billModel)
+  register(bb){
+    console.log("Your data is ===>",JSON.stringify(bb.value));
+    this.billModel = bb.value;
+    console.log(bb);
     this.serviceService.send(this.billModel)
     .subscribe(
       data=>console.log('success!',data),

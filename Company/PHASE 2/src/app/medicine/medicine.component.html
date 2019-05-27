@@ -1,4 +1,5 @@
-<table class="medicine-table" cellspacing="10">
+<form #myform="ngForm" (ngSubmit)="onSubmit(myform)" class="form form-register">
+<table id="medicine-table"  class="form-input" cellspacing="10">
 
   <!-- /////////////////left-div//////////////// -->
     <div class="unit-field">
@@ -7,37 +8,37 @@
       <h1>Unit</h1>
            <tr>
              <td>Total Unit&nbsp; :</td>
-             <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+             <td><input class="input" type="text"  name="Total Unit"  size="7" ngModel required></td>
             </tr>
             <tr>
                 <td>Pack Unit&nbsp; :</td>
-                <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                <td><input class="input" type="text"  name="Pack Unit"  size="7" ngModel required></td>
                 </tr>
             <tr>
                 <td>Loose Unit&nbsp; :</td>
-                <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                <td><input class="input" type="text"  name="loose Unit"  size="7" ngModel required></td>
             </tr>
             <tr>
                <td>Unit in pack&nbsp; :</td>
-               <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+               <td><input class="input" type="text"  name="unit in pack"  size="7" ngModel required></td>
             </tr>
             
             <h2>category</h2>
                      <tr>
                        <td>category&nbsp; :</td>
-                       <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                       <td><input class="input" type="text"  name="category"  size="7" ngModel required></td>
                       </tr>
                       <tr>
                           <td>Min.Qty&nbsp; :</td>
-                          <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                          <td><input class="input" type="text"  name="Min.Qty"  size="7" ngModel required></td>
                           </tr>
                       <tr>
                           <td>Max.Qty&nbsp; :</td>
-                          <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                          <td><input class="input" type="text"  name="Max.Qty"  size="7" ngModel required></td>
                       </tr>
                       <tr>
                          <td>Code&nbsp; :</td>
-                         <td><input class="input" type="Serial no" name="Serial no" size="7"></td>
+                         <td><input class="input" type="text"  name="code"  size="7" ngModel required></td>
                       </tr>
                     </mat-card-content>
                   </mat-card>
@@ -45,51 +46,51 @@
     </div>
    
    <!-- /////////////////right-div//////////////// --> 
-  <div class="name-field">
+  <div class=" name-field">
       <mat-card>
           <mat-card-content>
       <h1>Medicine Table</h1>
      
-      <tr class="name-row">
-          <td>Name&nbsp;:</td>
-          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+      <tr class=" name-row">
+          <td>name&nbsp;:</td>
+          <td><input class="input" type="text"  name="name"  size="10" ngModel required></td>
           <td>Comapny&nbsp;&nbsp;:</td>
-          <td><input class="input" type="default" name="Date" size="10"></td>
+          <td><input class="input" type="default"  name="Comapny"  size="10" ngModel required></td>
           <td> location&nbsp;&nbsp;:</td>
-          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+          <td><input class="input" type="Invoice no"  name="location "  size="10" ngModel required></td>
           <td> Batch&nbsp;&nbsp;:</td>
-          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+          <td><input class="input" type="Invoice no"  name="Batch "  size="10" ngModel required></td>
        </tr>
-       <tr class="name-row">
+       <tr class=" name-row">
           <td>Exp&nbsp; :</td>
-          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+          <td><input class="input" type="text"  name="exp"  size="10" ngModel required></td>
           <td>Mfg&nbsp; :</td>
-          <td><input class="input" type="default" name="Date" size="10"></td>
+          <td><input class="input" type="default"  name="mfg"  size="10" ngModel required></td>
           <td>Sch&nbsp; :</td>
-          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+          <td><input class="input" type="text"  name="sch"  size="10" ngModel required></td>
           <td>Gst% &nbsp; :</td>
-          <td><input class="input" type="default" name="Date" size="10"></td>
+          <td><input class="input" type="default"  name="gst"  size="10" ngModel required></td>
        </tr>
       
-       <tr class="name-row">
+       <tr class=" name-row">
           <td>MRP&nbsp; :</td>
-          <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+          <td><input class="input" type="text"  name="MRP"  size="10" ngModel required></td>
           <td>PTR &nbsp; :</td>
-          <td><input class="input" type="default" name="Date" size="10"></td>
+          <td><input class="input" type="default"  name="PTR"  size="10" ngModel required></td>
           <td> Purchase &nbsp; :</td>
-          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+          <td><input class="input" type="text" name="Purchase"  size="10" ngModel required></td>
           <td> salt &nbsp; :</td>
-          <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>        
+          <td><input class="input" type="text" name="salt"  size="10" ngModel required   ></td>        
        </tr>   
        <!-- <p>Other Details</p> -->
-         <!-- <tr class="name-row">
+         <!-- <tr class=" name-row">
              <td>Barcode &nbsp;:</td>
-             <td><input class="input" type="Serial no" name="Serial no" size="10"></td>
+             <td><input class="input" type="text"  name="text"  size="10" ngModel required></td>
              
              <td>Defective &nbsp; :</td>
-             <td><input class="input" type="default" name="Date" size="10"></td>
+             <td><input class="input" type="default"  name="Date"  size="10" ngModel required></td>
              <td> Inclusive &nbsp; :</td>
-             <td><input class="input" type="Invoice no" name="Invoice no" size="10"></td>
+             <td><input class="input" type="Invoice no"  name="Invoice no"  size="10" ngModel required></td>
              
           </tr>   -->
           
@@ -104,18 +105,18 @@
                 <h3 class="example-h2">Other Dertail</h3>
 
               <section class="example-section">
-                <mat-checkbox class="example-margin" [(ngModel)]="defective">Any Defective</mat-checkbox>
+                <mat-checkbox class="example-margin" name="Defective" [ngModel]="defective">Any Defective</mat-checkbox>
                 <mat-form-field class="example-margin" *ngIf="defective && !autoTicks">
-                <input matInput type="number"  [(ngModel)]="tickInterval" style="text-align: center">
+                <input matInput type="number"  [ngModel]="tickInterval" style="text-align: center">
                 </mat-form-field>
               </section>
               <section class="example-section">
                   <mat-slide-toggle>Bar code</mat-slide-toggle>
               </section>
               <section class="example-section">
-                  <mat-checkbox class="example-margin" [(ngModel)]="inclusive">Inclusive</mat-checkbox>
+                  <mat-checkbox class="example-margin" name="Bar code" [ngModel]="inclusive">Inclusive</mat-checkbox>
                   <mat-form-field class="example-margin" *ngIf="inclusive && !autoTicks">
-                  <input matInput type="number"  [(ngModel)]="tickInterval" style="text-align: center">
+                  <input matInput type="number"  [ngModel]="tickInterval" style="text-align: center">
                   </mat-form-field>
                 </section>
             </mat-card-content>
@@ -123,16 +124,11 @@
 
 
 </div>
-    
-    
-       
-    
-       
-     
-    
-   
+<input type="submit" value="submit">
+<!--    
     <button mat-raised-button class="cancle_button" color="primary">cancle</button>
-    <button mat-raised-button class="submit_button" color="primary">submit</button> 
-       
+     <button mat-raised-button class="submit_button" color="primary" (click)="onSubmit">submit</button> 
+        -->
       
 </table>
+</form>

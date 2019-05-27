@@ -12,7 +12,7 @@
 }
 
 ////////////////////////////child-div//////////////////////////////
-.right-child{
+#right-child{
     height: 95%;
     width: 81%;
     float: left;
@@ -32,7 +32,7 @@
 }
 //////////////////////////////////////medicine-table///////////////////////////////
 /////////////////upper-field-table-css///////////////
-.input{
+#input{
     background: white;
     border: 1px solid #c3c1c1;
     border-radius: 4px;
@@ -88,7 +88,7 @@ th{
     width: 19px;
     height: 23px;
   }
-.medicine-row{
+#medicine-row{
     border:none;
     height: 17px;
     text-align: center;

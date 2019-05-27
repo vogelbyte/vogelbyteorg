@@ -81,83 +81,76 @@
                   Inclusive&nbsp;&nbsp;:{{rowhover.inclusive}}<br>
                   </form>
             </mat-expansion-panel>
-
-        
-
-     </mat-accordion>       
-
-
-
-      </div>
+            </mat-accordion>       
+        </div>
         
           
  <!-- /////////////////////////////////////medicine table/////////////////////////////////////////-->
 <!-- /////////////////////upper-left-field///////////////////////////////// -->
 
-          <div class="right-child">
           
-  <form #myform="ngForm" (ngSubmit)="onSubmit(myform)" class="form form-register">
-          <table class="upper-table">
-              <tr class="heading-row">
-                 <h1>Bill PAYMENT</h1>             
-              </tr>
-            
+<form #myform="ngForm" (ngSubmit)="register(myform)" class="form form-register">
+          <div  class="form-input" id="right-child">
+             <table class="upper-table">
+                <tr class="heading-row">
+                  <h1>Bill PAYMENT</h1>             
+                </tr>
           <div class="left-field">
-               <TR>
+               <tr>
                   <td>Serial no:</td>
-                  <td><input class="input form-input" type="Serial no" name="Serial no" size="10"></td>
-               </TR>
-               <TR>
+                  <td><input id="input" type="text" name="Serial no" size="10" ngModel required></td>
+               </tr>
+               <tr>
                  <td>Date:</td>
-                 <td><input class="input form-input" type="default" name="Date" size="10"></td>
-               </TR>
-               <TR>
+                 <td><input id="input" type="text" name="Date" size="10" ngModel required></td>
+               </tr>
+               <tr>
                  <td> Invoice no:</td>
-                 <td><input class="input form-input" type="Invoice no" name="Invoice no" size="10"></td>
-               </TR>
+                 <td><input   id="input"type="text" name="Invoice" size="10" ngModel required></td>
+               </tr>
           </div>
     
  <!-- ////////////////////center-field/////////////////// -->    
 
          <div class="center-field">
-               <TR>
+               <tr>
                 <td>name</td>
-                <td><input class="input form-input" type="TEXT" name="name" size="10" [matAutocomplete]="auto2" [ngModel]="custmerdata.name"></td>&nbsp;
+                <td><input  id="input" type="text" name="name" size="10" [matAutocomplete]="auto2" [ngModel]="custmerdata.name"></td>&nbsp;
                 <mat-autocomplete   #auto2="matAutocomplete" >
-                    <mat-option  *ngFor="let option of custmer" [value]="option" (click)="custmerRowSelect(option)" >
+                    <mat-option  *ngFor="let option of custmer" [value]="option" (click)="custmerRowSelect(option)">
                       {{option.name}}{{option.store}}{{option.phone}}
                     </mat-option>
                   </mat-autocomplete>
                   <td>Store:</td>
-                  <td><input class="input form-input" type="TEXT" name="Store" size="10" [ngModel]="custmerdata.store"></td>
-                </TR>
-                <TR>
+                  <td><input   id="input"type="text" name="Store" size="10" [ngModel]="custmerdata.store"></td>
+                </tr>
+                <tr>
                   <td>Address:</td>
-                  <td><input class="input form-input" type="TEXT" name="Address" size="10" [ngModel]="custmerdata.address"></td>&nbsp;
+                  <td><input   id="input"type="text" name="Address" size="10" [ngModel]="custmerdata.address"></td>&nbsp;
                   <td>Phone</td>
-                  <td><input class="input form-input" type="Phone" name="Phone" size="10" [ngModel]="custmerdata.phone"></td>
-               </TR>
-               <TR>
+                  <td><input id="input" type="text" name="Phone" size="10" [ngModel]="custmerdata.phone"></td>
+               </tr>
+               <tr>
                 <td> Email:</td>
-                <td><input class="input form-input"type="TEXT" name="email" size="10" [ngModel]="custmerdata.email"></td>
-               </TR>
+                <td><input   id="input"type="email" name="email" size="10" [ngModel]="custmerdata.email"></td>
+               </tr>
         </div>
 <!-- ////////////////////right-field/////////////////// -->
         <div class="right-field">  
-          <TR>
+          <tr>
             <td>Bill Id:</td>
-            <td><input class="input form-input" type="Bill no" name="Billrial no" size="10"></td> &nbsp;
+            <td><input id="input"type="text" name="Billrial no" size="10"  ngModel required></td> &nbsp;
             <td>PAN no:</td>
-            <td><input class="input form-input" type="Pan no" name="Pan no" size="10" [ngModel]="custmerdata.pan"></td> 
-          </TR>
-          <TR>
+            <td><input id="input" type="text" name="Pan no" size="10" [ngModel]="custmerdata.pan"></td> 
+          </tr>
+          <tr>
             <td>GST:</td>
-            <td><input class="input form-input" type="default" name="Date" size="10" [ngModel]="custmerdata.gst"></td>
-         </TR>
-         <TR>
+            <td><input id="input" type="text" name="Date" size="10" [ngModel]="custmerdata.gst"></td>
+         </tr>
+         <tr>
             <td> DL no:</td>
-            <td><input class="input form-input" type="Dl no" name="Dl no" size="10" [ngModel]="custmerdata.l_no"></td>
-         </TR>
+            <td><input  id="input" type="text" name="Dl no" size="10" [ngModel]="custmerdata.l_no"></td>
+         </tr>
       </div>
 <!-- //////////////////medicine-table////////////////////////// -->
         <div class="medicine-table">
@@ -179,45 +172,47 @@
                       <th class="text-center">Inc Rate</th>
                       <th class="text-center">Amount</th>
                   </tr>
-                  <tr *ngFor="let row of rows; let id = index" (click)="highlightRow(id,rows)">
-                    <td >
-                       <span >
-                          <input class="medicine-row form-input" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" placeholder="search">
-                          <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
-                            <mat-option  *ngFor="let option of filteredOptions | async"   (click)="rowSelect(option)" (click)="addFieldValue(id)" (mouseenter)="rowHover(option)">
-                                {{option.med_name}}{{option.quantity}}{{option.type}}
-                            </mat-option>
-                          </mat-autocomplete>
-                        </span>
-                    </td>
-                    <td>
-                      <span><input class="medicine-row form-input" size="8%" type="text" [ngModel]="row.med_name" value="{{row.med_name}}"></span>
-                    </td>
-                    <td>
-                      <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.batch_no}}"></span>
-                    </td>
-                    <td>
-                      <span><input class="medicine-row form-input" size="8%" type="date" value="{{row.exp}}"></span>
-                    </td>
-                    <td>
-                      <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.quantity}}"></span>
-                    </td>
-                    <td>
-                        <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.gst}}"></span>
-                    </td>
-                    <td>
-                        <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.net_rate}}"></span>
-                    </td>
-                    <td>
-                        <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.dis}}"></span>
-                    </td>  
-                    <td>
-                        <span><input class="medicine-row form-input" size="8%" type="text" ></span>
-                    </td>
-                    <td>
-                        <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.amount}}"></span>
-                    </td>
-                </table>
+                  <!-- (click)="highlightrow(id,rows)" -->
+                  <tr *ngFor="let row of rows; let id = index" >
+                      <td >
+                          <span >
+                             <input class="medicine-row form-input" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" >
+                             <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
+                               <mat-option  *ngFor="let option of medicineDetail" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
+                                   {{option.med_name}}{{option.quantity}}{{option.type}}
+                               </mat-option>
+                             </mat-autocomplete>
+                           </span>
+                       </td>
+                       <td>
+                         <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.med_name}}"></span>
+                       </td>
+                       <td>
+                         <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.batch_no}}"></span>
+                       </td>
+                       <td>
+                         <span><input class="medicine-row" size="8%" type="text" value="{{row.exp}}"></span>
+                       </td>
+                       <td>
+                         <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.quantity}}"></span>
+                       </td>
+                       <td>
+                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.gst}}"></span>
+                       </td>
+                       <td>
+                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.net_rate}}"></span>
+                       </td>
+                       <td>
+                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.dis}}"></span>
+                       </td>  
+                       <td>
+                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.inc_rate}}"></span>
+                       </td>
+                       <td>
+                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.amount}}"></span>
+                       </td>
+                     </tr>
+                   </table>
               </div>
             </div>
           </div>
@@ -225,21 +220,21 @@
       
 <!-- ///////////////////////medicine-footer-data//////////////////////////// -->
                   <div class="lower-field">
-                      <TR>
+                      <tr>
                         <td class="left">Discount:</td>
-                        <td><input class="input form-input" type="Serial no" name="Serial no" size="10"></td>
+                        <td><input id="input" type="text" name="discount" size="10" ngModel required></td>
                           <td class="right1">Gst:</td>
-                        <td><input class="input form-input" type="default" name="Date" size="10"></td>
+                        <td><input   id="input"type="text" name="gst" size="10" ngModel required></td>
                            <td class="right2"> Net Amount:</td>
-                        <td><input  class="input form-input" type="Invoice no" name="Invoice no" size="10"></td>
-                      </TR>
+                        <td><input    id="input"type="text" name="net_amount" size="10" ngModel required></td>
+                      </tr>
                       <input type="submit" value="submit">
-                      <button mat-raised-button class="cancle_button" color="primary">cancle</button>
+                      <!-- <button mat-raised-button class="cancle_button" color="primary">cancle</button>
                       <button mat-raised-button class="submit_button" color="primary" (click)="onSubmit">submit</button> 
-                      
+                       -->
                   </div>
                   
     </table>
+  </div>
     </form>
-</div>
 </div>

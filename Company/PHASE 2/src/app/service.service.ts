@@ -3,6 +3,7 @@ import { HttpClient} from '@angular/common/http';
 // import { UserComponent } from './user/user.component';
 import { Admin} from './admin';
 import { Billpayment } from './servicefile/billpayment';
+import { Medicinetable } from './servicefile/medicinetable';
 @Injectable({
   providedIn: 'root'
 })
@@ -17,4 +18,7 @@ export class ServiceService {
   login(user :Admin){
    return this._http.post<any>(this._url, user);
   }
+  store(medicine:Medicinetable){
+    return this._http.post<any>(this._url,medicine);
+   }
 }
