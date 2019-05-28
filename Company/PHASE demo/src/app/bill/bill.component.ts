@@ -5,8 +5,7 @@ import { startWith, map } from 'rxjs/operators';
 import { FormControl } from '@angular/forms'
 import { Observable } from 'rxjs';
 import {MatTableDataSource} from '@angular/material';
-import { Billpayment } from '../servicefile/billpayment';
-import { ServiceService } from '../service.service';
+
 @Component({
   selector: 'app-bill',
   templateUrl: './bill.component.html',
@@ -23,9 +22,6 @@ export class BillComponent implements OnInit {
   public custmerdata="";
   private newAttribute: any = {};
   public medicineDetail =[];
-  public seachtable=[];
-  public rownumber;
-  public newrow = {company_id:'', med_name:'', batch_no:'', exp:'', quantity:'', gst:'', net_rate:'', dis:'', inc_rate:'', amount:''};
   show=false;
  
   public custmer=[];
@@ -36,10 +32,6 @@ export class BillComponent implements OnInit {
     [
     {company_id:'', med_name:'', batch_no:'', exp:'', quantity:'', gst:'', net_rate:'', dis:'', inc_rate:'', amount:''}
     ];
-
-    dataobj="";
-    billModel=  new Billpayment (this.dataobj);
-     billModelArray:Billpayment[];
   
     rowHover(medicine:any)
         {
@@ -52,10 +44,8 @@ export class BillComponent implements OnInit {
      rowSelect(medicine:any)
          {
           this.selectedrow=medicine;
-          console.log("rowSelected method" ,this.selectedrow);
-          console.log("this.rownumber==>",this.rownumber);
-          this.rows[this.rownumber]=this.selectedrow;
-          console.log("this.fhfhfhfhfhfh  ==>",this.rows[this.rownumber]);
+         // console.log("rowSelected method" ,this.selectedrow);
+          this.rows[this.selectedIndex]=this.selectedrow;
           
          }
     public highlightRow(id,rows) 
@@ -66,16 +56,15 @@ export class BillComponent implements OnInit {
           console.log( " selected length", this.selectedLength);
 
          } 
-     addFieldValue(rows) 
+     addFieldValue(i) 
         {
-          console.log("your i",rows);
-          // if(i==this.selectedLength.length-1)
-          // {
-          this.rows.push(this.newrow);
-          this.rows = rows;
+          console.log("your i",i);
+          if(i==this.selectedLength.length-1)
+          {
+          this.rows.push(this.newAttribute)
           this.newAttribute = {};
           console.log("true");
-          // };
+          };
         
         console.log("false");
 
@@ -90,8 +79,7 @@ export class BillComponent implements OnInit {
           return subject ? subject.company_id :undefined;
         }
   constructor(private medicineDetailService:MedicineDetailService,
-              private custmerService:CustmerService,
-              private serviceService:ServiceService
+              private custmerService:CustmerService
               ) { }
  
 
@@ -119,7 +107,7 @@ export class BillComponent implements OnInit {
         }
     private _filter(value:string): any[] 
     {
-     const filterValue = value;
+     const filterValue = value.toLowerCase();
      return this.medicineDetail.filter( option =>
       option.med_name.toLowerCase().includes(filterValue)
      );
@@ -134,29 +122,5 @@ export class BillComponent implements OnInit {
     //   this.buttonName = "Show";
   }
 
-  sendSearchString(medName,i){
-    console.log("MED DATA===>",medName);
-    console.log("MED DATA1212===>",i);
-    this.rownumber=i;
-    for(let i=0;i<this.medicineDetail.length;i++){
-        if(medName.includes(this.medicineDetail[i].med_name)!=true){
-          this.seachtable[i] = this.medicineDetail[i];
-          console.log("SEARCHED OBJECT==>",this.dataSource);
-        }
-    }
-
-  }
-
-
-  register(userMedicine){
-    console.log("Your data is ===>",JSON.stringify(userMedicine.value));
-    this.billModel = userMedicine.value;
-    console.log(userMedicine);
-    this.serviceService.send(this.billModel)
-    .subscribe(
-      data=>console.log('success!',data),
-      error =>console.log('error!',error)
-    )
-  }
 
 }

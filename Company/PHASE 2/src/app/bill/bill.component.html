@@ -1,240 +1,258 @@
 <div class="parent">
-         <div class="left-child">
-           
-            <mat-expansion-panel class="mat-panel-5"[expanded]="true">
-                <mat-expansion-panel-header  class="header-content-5"
-                [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-                <mat-panel-title><mat-icon>event_note</mat-icon>&nbsp;
-                Unit
-                </mat-panel-title>
-              </mat-expansion-panel-header>
-              <form class="form-content">
-                  Total Unit&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 
-                  <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7" [ngModel]="rowhover.total_unit"> -->{{rowhover.total_unit}}<br>
-                  Pack Unit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 
-                <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7" [ngModel]="rowhover.pack_unit"> -->{{rowhover.pack_unit}}<br>
-                Loose Unit&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;
-                <!-- <input class="expension-input" type="unit" name="loose Unit" size="7" [ngModel]="rowhover.loose_unit"> -->{{rowhover.loose_unit}}<br>
-                Unit In Pack&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;
-                <!-- <input class="expension-input" type="unit" name="loose Unit" size="7" [ngModel]="rowhover.unit_in_pack">  -->{{rowhover.unit_in_pack}}<br>
-                Defective&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.defective}}
-              </form>
-          </mat-expansion-panel>
+  <div class="left-child">
+    
+     <mat-expansion-panel class="mat-panel-5"[expanded]="true">
+         <mat-expansion-panel-header  class="header-content-5"
+         [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+         <mat-panel-title><mat-icon>event_note</mat-icon>&nbsp;
+         Unit
+         </mat-panel-title>
+       </mat-expansion-panel-header>
+       <form class="form-content">
+           Total Unit&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 
+           <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7" [ngModel]="rowhover.total_unit"> -->{{rowhover.total_unit}}<br>
+           Pack Unit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; 
+         <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7" [ngModel]="rowhover.pack_unit"> -->{{rowhover.pack_unit}}<br>
+         Loose Unit&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;
+         <!-- <input class="expension-input" type="unit" name="loose Unit" size="7" [ngModel]="rowhover.loose_unit"> -->{{rowhover.loose_unit}}<br>
+         Unit In Pack&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;
+         <!-- <input class="expension-input" type="unit" name="loose Unit" size="7" [ngModel]="rowhover.unit_in_pack">  -->{{rowhover.unit_in_pack}}<br>
+         Defective&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.defective}}
+       </form>
+   </mat-expansion-panel>
 
-          <mat-expansion-panel class="mat-panel-6"[expanded]="true">
-              <mat-expansion-panel-header  class="header-content-6"
+   <mat-expansion-panel class="mat-panel-6"[expanded]="true">
+       <mat-expansion-panel-header  class="header-content-6"
+       [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+       <mat-panel-title><mat-icon>wc</mat-icon>&nbsp;
+       Date & price
+       </mat-panel-title>
+     </mat-expansion-panel-header>
+     <form class="form-content">
+         MRP&nbsp;&nbsp;&nbsp;&nbsp;: {{rowhover.mrp}}<br>
+         <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"> -->
+         P.T.R&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.ptr}}<br>
+       <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"> -->
+       Purchase&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.purchase_rate}}<br>
+       <!-- <input class="expension-input" type="unit" name="loose Unit" size="7">  -->
+       Gst&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.gst}}<br>
+       Exp Date&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.exp_date}}<br>
+       Mfg Date&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.mfg_date}}<br>
+     </form>
+ </mat-expansion-panel>
+     <mat-accordion multi="false">
+         <mat-expansion-panel class="mat-panel-1"[expanded]="true">
+             <mat-expansion-panel-header  class="header-content-1"
               [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-              <mat-panel-title><mat-icon>wc</mat-icon>&nbsp;
-              Date & price
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <form class="form-content">
-                MRP&nbsp;&nbsp;&nbsp;&nbsp;: {{rowhover.mrp}}<br>
-                <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"> -->
-                P.T.R&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.ptr}}<br>
-              <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"> -->
-              Purchase&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.purchase_rate}}<br>
-              <!-- <input class="expension-input" type="unit" name="loose Unit" size="7">  -->
-              Gst&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.gst}}<br>
-              Exp Date&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.exp_date}}<br>
-              Mfg Date&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.mfg_date}}<br>
+              <mat-panel-title>
+                <mat-icon>assessment</mat-icon>&nbsp;
+              Medicine Detail
+             </mat-panel-title>
+           </mat-expansion-panel-header>
+           <form class="form-content">
+               Batch&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.batch_no}}<br>
+               <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit"> -->
+             Company&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.company}}<br>
+              <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit"> -->
+              Salt&nbsp;&nbsp;:{{rowhover.salt}}<br>
+              <!-- <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit">  -->
             </form>
-        </mat-expansion-panel>
-            <mat-accordion multi="false">
-                <mat-expansion-panel class="mat-panel-1"[expanded]="true">
-                    <mat-expansion-panel-header  class="header-content-1"
-                     [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-                     <mat-panel-title>
-                       <mat-icon>assessment</mat-icon>&nbsp;
-                     Medicine Detail
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <form class="form-content">
-                      Batch&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.batch_no}}<br>
-                      <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit"> -->
-                    Company&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.company}}<br>
-                     <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit"> -->
-                     Salt&nbsp;&nbsp;:{{rowhover.salt}}<br>
-                     <!-- <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit">  -->
-                   </form>
-              </mat-expansion-panel>
+       </mat-expansion-panel>
 
-              <mat-expansion-panel class="mat-panel-2">
-                  <mat-expansion-panel-header  class="header-content-2"
-                   [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
-                   <mat-panel-title>
-                      <mat-icon>payment</mat-icon>&nbsp;
-                   Other Detail
-                  </mat-panel-title>
-                </mat-expansion-panel-header>
-                <form class="form-content">
-                    Category&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.category}}<br>
-                    <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit"> -->
-                  Min Qty&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.min_quantity}}<br>
-                   <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit"> -->
-                  Max Qty&nbsp;&nbsp;:{{rowhover.max_quantity}}<br>
-                   <!-- <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit">  -->
-                  Code&nbsp;&nbsp;:{{rowhover.code}}<br>
-                  Location&nbsp;&nbsp;:{{rowhover.location}}<br>
-                  Scheme&nbsp;&nbsp;:{{rowhover.scheme}}<br>
-                  Barcode&nbsp;&nbsp;:{{rowhover.barcode}}<br>
-                  Inclusive&nbsp;&nbsp;:{{rowhover.inclusive}}<br>
-                  </form>
-            </mat-expansion-panel>
-            </mat-accordion>       
-        </div>
-        
-          
- <!-- /////////////////////////////////////medicine table/////////////////////////////////////////-->
+       <mat-expansion-panel class="mat-panel-2">
+           <mat-expansion-panel-header  class="header-content-2"
+            [collapsedHeight]="'25px'" [expandedHeight]="'25px'">
+            <mat-panel-title>
+               <mat-icon>payment</mat-icon>&nbsp;
+            Other Detail
+           </mat-panel-title>
+         </mat-expansion-panel-header>
+         <form class="form-content">
+             Category&nbsp;&nbsp;&nbsp;&nbsp;:{{rowhover.category}}<br>
+             <!-- <input  class="expension-input" type="unit" name="Total Unit" size="7"[ngModel]="rowhover.total_Unit"> -->
+           Min Qty&nbsp;&nbsp;&nbsp;&nbsp; :{{rowhover.min_quantity}}<br>
+            <!-- <input class="expension-input" type="unit" name="Pack Unit" size="7"[ngModel]="rowhover.pack_Unit"> -->
+           Max Qty&nbsp;&nbsp;:{{rowhover.max_quantity}}<br>
+            <!-- <input class="expension-input" type="unit" name="loose Unit" size="7"[ngModel]="rowhover.loose_Unit">  -->
+           Code&nbsp;&nbsp;:{{rowhover.code}}<br>
+           Location&nbsp;&nbsp;:{{rowhover.location}}<br>
+           Scheme&nbsp;&nbsp;:{{rowhover.scheme}}<br>
+           Barcode&nbsp;&nbsp;:{{rowhover.barcode}}<br>
+           Inclusive&nbsp;&nbsp;:{{rowhover.inclusive}}<br>
+           </form>
+     </mat-expansion-panel>
+     </mat-accordion>       
+ </div>
+ 
+   
+<!-- /////////////////////////////////////medicine table/////////////////////////////////////////-->
 <!-- /////////////////////upper-left-field///////////////////////////////// -->
 
-          
+   
 <form #myform="ngForm" (ngSubmit)="register(myform)" class="form form-register">
-          <div  class="form-input" id="right-child">
-             <table class="upper-table">
-                <tr class="heading-row">
-                  <h1>Bill PAYMENT</h1>             
-                </tr>
-          <div class="left-field">
-               <tr>
-                  <td>Serial no:</td>
-                  <td><input id="input" type="text" name="Serial no" size="10" ngModel required></td>
-               </tr>
-               <tr>
-                 <td>Date:</td>
-                 <td><input id="input" type="text" name="Date" size="10" ngModel required></td>
-               </tr>
-               <tr>
-                 <td> Invoice no:</td>
-                 <td><input   id="input"type="text" name="Invoice" size="10" ngModel required></td>
-               </tr>
-          </div>
-    
- <!-- ////////////////////center-field/////////////////// -->    
+   <div  class="form-input" id="right-child">
+      <table class="upper-table">
+         <tr class="heading-row">
+           <h1>Bill PAYMENT</h1>             
+         </tr>
+   <div class="left-field">
+        <tr>
+           <td>Serial no:</td>
+           <td><input id="input" type="text" name="Serial no" size="10" ngModel required></td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td><input id="input" type="text" name="Date" size="10" ngModel required></td>
+        </tr>
+        <tr>
+          <td> Invoice no:</td>
+          <td><input   id="input"type="text" name="Invoice" size="10" ngModel required></td>
+        </tr>
+   </div>
 
-         <div class="center-field">
-               <tr>
-                <td>name</td>
-                <td><input  id="input" type="text" name="name" size="10" [matAutocomplete]="auto2" [ngModel]="custmerdata.name"></td>&nbsp;
-                <mat-autocomplete   #auto2="matAutocomplete" >
-                    <mat-option  *ngFor="let option of custmer" [value]="option" (click)="custmerRowSelect(option)">
-                      {{option.name}}{{option.store}}{{option.phone}}
-                    </mat-option>
-                  </mat-autocomplete>
-                  <td>Store:</td>
-                  <td><input   id="input"type="text" name="Store" size="10" [ngModel]="custmerdata.store"></td>
-                </tr>
-                <tr>
-                  <td>Address:</td>
-                  <td><input   id="input"type="text" name="Address" size="10" [ngModel]="custmerdata.address"></td>&nbsp;
-                  <td>Phone</td>
-                  <td><input id="input" type="text" name="Phone" size="10" [ngModel]="custmerdata.phone"></td>
-               </tr>
-               <tr>
-                <td> Email:</td>
-                <td><input   id="input"type="email" name="email" size="10" [ngModel]="custmerdata.email"></td>
-               </tr>
-        </div>
-<!-- ////////////////////right-field/////////////////// -->
-        <div class="right-field">  
-          <tr>
-            <td>Bill Id:</td>
-            <td><input id="input"type="text" name="Billrial no" size="10"  ngModel required></td> &nbsp;
-            <td>PAN no:</td>
-            <td><input id="input" type="text" name="Pan no" size="10" [ngModel]="custmerdata.pan"></td> 
-          </tr>
-          <tr>
-            <td>GST:</td>
-            <td><input id="input" type="text" name="Date" size="10" [ngModel]="custmerdata.gst"></td>
+<!-- ////////////////////center-field/////////////////// -->    
+
+  <div class="center-field">
+        <tr>
+         <td>name</td>
+         <td><input  id="input" type="text" name="name" size="10" [matAutocomplete]="auto2" [ngModel]="custmerdata.name"></td>&nbsp;
+         <mat-autocomplete   #auto2="matAutocomplete" >
+             <mat-option  *ngFor="let option of custmer" [value]="option" (click)="custmerRowSelect(option)">
+               {{option.name}}{{option.store}}{{option.phone}}
+             </mat-option>
+           </mat-autocomplete>
+           <td>Store:</td>
+           <td><input   id="input"type="text" name="Store" size="10" [ngModel]="custmerdata.store"></td>
          </tr>
          <tr>
-            <td> DL no:</td>
-            <td><input  id="input" type="text" name="Dl no" size="10" [ngModel]="custmerdata.l_no"></td>
-         </tr>
-      </div>
+           <td>Address:</td>
+           <td><input   id="input"type="text" name="Address" size="10" [ngModel]="custmerdata.address"></td>&nbsp;
+           <td>Phone</td>
+           <td><input id="input" type="text" name="Phone" size="10" [ngModel]="custmerdata.phone"></td>
+        </tr>
+        <tr>
+         <td> Email:</td>
+         <td><input   id="input"type="email" name="email" size="10" [ngModel]="custmerdata.email"></td>
+        </tr>
+ </div>
+<!-- ////////////////////right-field/////////////////// -->
+ <div class="right-field">  
+   <tr>
+     <td>Bill Id:</td>
+     <td><input id="input"type="text" name="Billrial no" size="10"  ngModel required></td> &nbsp;
+     <td>PAN no:</td>
+     <td><input id="input" type="text" name="Pan no" size="10" [ngModel]="custmerdata.pan"></td> 
+   </tr>
+   <tr>
+     <td>GST:</td>
+     <td><input id="input" type="text" name="Date" size="10" [ngModel]="custmerdata.gst"></td>
+  </tr>
+  <tr>
+     <td> DL no:</td>
+     <td><input  id="input" type="text" name="Dl no" size="10" [ngModel]="custmerdata.l_no"></td>
+  </tr>
+</div>
 <!-- //////////////////medicine-table////////////////////////// -->
-        <div class="medicine-table">
-        <div class="card">
-            <div class="card-body">
-              <div id="table" class="table-editable">
-               
-                <table  class="table table-bordered table-responsive-md table-striped text-center">
-                  <tr>
-                   
-                    <th class="text-center">Code</th>
-                      <th class="text-center">medicine</th> 
-                      <th class="text-center">Batch</th>
-                      <th class="text-center">Exp.</th>
-                      <th class="text-center">Qty.</th> 
-                      <th class="text-center">GST%</th>
-                      <th class="text-center">Sale Rs</th>
-                      <th class="text-center">Dis%</th> 
-                      <th class="text-center">Inc Rate</th>
-                      <th class="text-center">Amount</th>
-                  </tr>
-                  <!-- (click)="highlightrow(id,rows)" -->
-                  <tr *ngFor="let row of rows; let id = index" >
-                      <td >
-                          <span >
-                             <input class="medicine-row form-input" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" >
-                             <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
-                               <mat-option  *ngFor="let option of medicineDetail" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
-                                   {{option.med_name}}{{option.quantity}}{{option.type}}
-                               </mat-option>
-                             </mat-autocomplete>
-                           </span>
-                       </td>
-                       <td>
-                         <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.med_name}}"></span>
-                       </td>
-                       <td>
-                         <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.batch_no}}"></span>
-                       </td>
-                       <td>
-                         <span><input class="medicine-row" size="8%" type="text" value="{{row.exp}}"></span>
-                       </td>
-                       <td>
-                         <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.quantity}}"></span>
-                       </td>
-                       <td>
-                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.gst}}"></span>
-                       </td>
-                       <td>
-                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.net_rate}}"></span>
-                       </td>
-                       <td>
-                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.dis}}"></span>
-                       </td>  
-                       <td>
-                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.inc_rate}}"></span>
-                       </td>
-                       <td>
-                           <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.amount}}"></span>
-                       </td>
-                     </tr>
-                   </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      
+ <div class="medicine-table">
+ <div class="card">
+     <div class="card-body">
+       <div id="table" class="table-editable">
+        
+         <table  class="table table-bordered table-responsive-md table-striped text-center">
+           <tr>
+            
+             <th class="text-center">Code</th>
+               <th class="text-center">medicine</th> 
+               <th class="text-center">Batch</th>
+               <th class="text-center">Exp.</th>
+               <th class="text-center">Qty.</th> 
+               <th class="text-center">GST%</th>
+               <th class="text-center">Sale Rs</th>
+               <th class="text-center">Dis%</th> 
+               <th class="text-center">Inc Rate</th>
+               <th class="text-center">Amount</th>
+           </tr>
+           <!-- (click)="highlightrow(id,rows)" -->
+           <!-- <tr *ngFor="let row of rows; let id = index" >
+               <td >
+                   <span >
+                      <input class="medicine-row form-input" size="8%" [matAutocomplete]="auto" type="text" value="{{row.company_id}}" >
+                      <mat-autocomplete   [displayWith]="displayFn" #auto="matAutocomplete" >
+                        <mat-option  *ngFor="let option of medicineDetail" [value]="option"  (click)="rowSelect(option)" (click)="addFieldValue()" (mouseenter)="rowHover(option)">
+                            {{option.med_name}}{{option.quantity}}{{option.type}}
+                        </mat-option>
+                      </mat-autocomplete>
+                    </span>
+                </td>
+                <td>
+                  <span><input class="medicine-row form-input" size="8%" type="text" value="{{row.med_name}}"></span>
+                </td> -->
+                  <table mat-table [dataSource]="seachtable" class="mat-elevation-z8" style="position:absolute;" *ngIf="show">
+                   <ng-container matColumnDef="med_name">
+                     <th mat-header-cell *matHeaderCellDef> medicine</th>
+                     <td mat-cell *matCellDef="let element" (click)="rowSelect(element)"  (mouseenter)="rowHover(element)" (click)="hideTable() " > {{element.med_name}} </td>
+                   </ng-container>
+                   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                 </table>  
+               <tr *ngFor="let row of rows; let id = index" (click)="highlightRow(id,rows)" >
+                 <td >
+                   <span ><input class="medicine-row" size="8%" type="text" value="{{row.company_id}}" [ngModel]="row.company_id" name="code"></span>
+                 </td>
+                 <td>
+                   <span>
+                     <input #medName class="medicine-row" size="8%" type="text" value="{{row.med_name}}" (keyup.enter) ="addFieldValue(rows)" name="med_name" (keyup)="sendSearchString(medName.value,id)" (keyup)="showTable()" [ngModel]="row.med_name" >
+                   </span>
+                 </td>
+                 <td>
+                <td>
+                  <span><input class="medicine-row " size="8%" type="text" [ngModel]="row.batch_no" name="batch_no" value="{{row.batch_no}}"></span>
+                </td>
+                <td>
+                  <span><input class="medicine-row" size="8%" type="text" [ngModel]="row.exp" name="exp" value="{{row.exp}}"></span>
+                </td>
+                <td>
+                  <span><input class="medicine-row" size="8%" type="text" [ngModel]="row.quantity" name="quantity" value="{{row.quantity}}"></span>
+                </td>
+                <td>
+                    <span><input class="medicine-row" size="8%" type="text" [ngModel]="row.gst" name="gst" value="{{row.gst}}"></span>
+                </td>
+                <td>
+                    <span><input class="medicine-row " size="8%" type="text" [ngModel]="row.net_rate" name="net_rate" value="{{row.net_rate}}"></span>
+                </td>
+                <td>
+                    <span><input class="medicine-row " size="8%" type="text" [ngModel]="row.dis" name="dis" value="{{row.dis}}"></span>
+                </td>  
+                <td>
+                    <span><input class="medicine-row " size="8%" type="text" [ngModel]="row.inc_rate" name="inc_rate"value="{{row.inc_rate}}"></span>
+                </td>
+                <td>
+                    <span><input class="medicine-row" size="8%" type="text" [ngModel]="row.amount"name="amount" value="{{row.amount}}"></span>
+                </td>
+              </tr>
+            </table>
+       </div>
+     </div>
+   </div>
+ </div>
+
 <!-- ///////////////////////medicine-footer-data//////////////////////////// -->
-                  <div class="lower-field">
-                      <tr>
-                        <td class="left">Discount:</td>
-                        <td><input id="input" type="text" name="discount" size="10" ngModel required></td>
-                          <td class="right1">Gst:</td>
-                        <td><input   id="input"type="text" name="gst" size="10" ngModel required></td>
-                           <td class="right2"> Net Amount:</td>
-                        <td><input    id="input"type="text" name="net_amount" size="10" ngModel required></td>
-                      </tr>
-                      <input type="submit" value="submit">
-                      <!-- <button mat-raised-button class="cancle_button" color="primary">cancle</button>
-                      <button mat-raised-button class="submit_button" color="primary" (click)="onSubmit">submit</button> 
-                       -->
-                  </div>
-                  
-    </table>
-  </div>
-    </form>
+           <div class="lower-field">
+               <tr>
+                 <td class="left">Discount:</td>
+                 <td><input id="input" type="text" name="discount" size="10" ngModel required></td>
+                   <td class="right1">Gst:</td>
+                 <td><input   id="input"type="text" name="gst" size="10" ngModel required></td>
+                    <td class="right2"> Net Amount:</td>
+                 <td><input    id="input"type="text" name="net_amount" size="10" ngModel required></td>
+               </tr>
+               <input type="submit" value="submit">
+               <!-- <button mat-raised-button class="cancle_button" color="primary">cancle</button>
+               <button mat-raised-button class="submit_button" color="primary" (click)="onSubmit">submit</button> 
+                -->
+           </div>
+           
+</table>
+</div>
+</form>
 </div>
